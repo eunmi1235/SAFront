@@ -1,0 +1,95 @@
+	<div id="footer_in">
+    	<div class="footerinner">
+       <!--sh--> <div class="nav-left">
+                      <ul>
+                          <p>Auction</p>
+                          <li>     
+                            <a href="/currentAuction?sale_kind=offline_only&page=1&lang={{locale}}"><!--<a href="#">-->
+                                <spring:message code="label.auction.offlinecurrent" /> 메이저 경매
+                            </li>
+                            <li>
+                            <span ng-if="offlineUpcomingIng > 0"><a href="/upcomingAuction?sale_kind=offline_only&lang={{locale}}">예정경매<spring:message code="label.auction.upcoming" /></a></span>
+                            </li>  
+                            <li><a href="/resultAuction?sale_kind=offline_only&page=1&lang={{locale}}">경매결과</a></li>
+                            <li><a href="/auctionGuide/page?view=biddingGuide&lang={{locale}}">경매위탁</a></li>  
+                          <p>Online</p>
+                          <li> 
+                            <span ng-if="onlineIng > 0"><a href="/currentAuction?sale_kind=online_only&page=1&lang={{locale}}">진행경매<spring:message code="label.auction.current" /></a></span>
+                            <span ng-if="onlineIng == 0 || onlineIng == null" id="onlineCurrBtn"><spring:message code="label.auction.current" /></span> 
+                        </li>      
+                        <li>
+                            <span ng-if="onlineUpcomingIng > 0"><a href="/upcomingAuction?sale_kind=online_only&lang={{locale}}">예정경매<spring:message code="label.auction.upcoming" /></a></span> 
+                         </li>
+                        <!-- <li>
+                            <a href="https://www.blacklot.com/" ng-if="locale=='ko'" target="_blank">블랙랏<img src="/images/icon/now_icon.png"/></a>  
+                        </li>  -->
+                        <!-- <li>      
+                            <span ng-if="outsideIng > 0"><a href="/currentAuction?sale_outside_yn=Y&lang={{locale}}">
+                                <span ng-if="locale=='ko'">블랙랏 제로베이스</span></a>
+                            </span>
+                        </li> -->
+                        <li><a href="/auctionGuide/page?view=onlinebidGuide&lang={{locale}}">위탁안내<spring:message code="label.howto.onbid" /></a></li><li>
+                            <span ng-if="zerobaseIng > 0"><a href="/currentAuction?sale_kind=zerobase_only&page=1&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 경매</span></a></span>
+                        </li>
+                        <li>
+                            <a href="https://www.seoulauction.com/zerobaseArtist?page=1&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 작가</span></a></span>
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="nav">
+                      <ul>
+                      	  <p>How To</p>
+                          	<li><a href="/auctionGuide/page?view=commissionGuide">위탁안내<spring:message code="label.howto.contract" /></a></li>
+                            <li><a href="/auctionGuide/page?view=biddingGuide">경매안내<spring:message code="label.howto.bid" /></a></li>
+                            <li><a href="/auctionGuide/page?view=onlinebidGuide">온라인경매안내<spring:message code="label.howto.onbid" /></a></li>
+
+                          <p>Private Sale</p>
+                          <li><a href="/currentPrivate?lang={{locale}}">프라이빗 세일<spring:message code="label.ps.privatesale" />
+                            <li><a href="/ps/page?view=priGuide&lang={{locale}}">PS가이드<spring:message code="label.ps.privateguide" /></li></a> 
+                          
+                            <p>Search</p>
+                              <li><a href="/search">검색<spring:message code="label.artwork.search" /></a></li>
+                            <p><spring:message code="label.terms.auction01" /></p>
+                              <li><a href="/terms/page?view=auctionTerms">약관<spring:message code="label.terms.auction" /></a></li>
+                              <li><a href="/terms/page?view=privateInfo">개인정보방침<spring:message code="label.terms.privacy.policy" /></a></li>
+                              <!-- <li><a href="/terms/page?view=infoManage"><spring:message code="label.terms.infor.rules" /></a></li> -->
+                      </ul>
+                  </div>
+                  <div class="nav">
+                      <ul>
+                      	  <p>Service</p>
+                            <li>
+                                <a href="/service/page?view=academy&lang={{locale}}">아카데미<spring:message code="label.academy" /></a>
+                            </li>  
+                            <li><a href="/service/page?view=corporationArtwork&lang={{locale}}">아트컨설팅 & 기업마케팅<spring:message code="label.company.artwork" /></a></li>
+                            <li><a href="/service/page?view=rentExhibitionCenter&lang={{locale}}">전시장대관<spring:message code="label.space.rental" /></a></li>
+                            <li><a href="/service/page?view=securedLoan&lang={{locale}}">담보대출<spring:message code="label.collateral.loan" /></a></li>
+                                 <li><a href="/service/page?view=chinaArtwork&lang={{locale}}">중국미술품<spring:message code="label.china.artwork.auth" /></a></li>
+                            <li><a href="/service/page?view=storageInsa&lang={{locale}}">보관고<spring:message code="label.artwork.keep" /></a></li>
+                            <li ng-if="locale==='ko'"><a href="/service/page?view=Newsletter">뉴스레터<spring:message code="label.newsletter" /></a></li> 
+                      </ul>
+                  </div>
+                  <div class="nav">
+                      <ul>
+                          <p>About</p>
+                            <li><a href="/about/page?view=introduction&lang={{locale}}">회사소개<spring:message code="label.seoulauction.introduction" /></a></li>
+                            <li><a href="/about/page?view=introGang&lang={{locale}}">서울옥션강남센터<spring:message code="label.seoulauction.introgang" /></a></li>
+                            <li><a href="/about/page?view=history&lang={{locale}}">연혁<spring:message code="label.seoulauction.history" /></a></li>
+                            <li><a href="/about/page?view=pressList&lang={{locale}}">언론보도<spring:message code="label.press" /></a></li>
+                            <li><a href="/noticeList?lang={{locale}}">공지사항<spring:message code="label.notice" /></a></li> 
+                            <li ng-if="locale == 'ko'">   
+                                <span ng-if="recruitMent > 0"><a href="/about/page?view=recruitList">채용공고<spring:message code="label.recruit" /></a></span> 
+                            </li>   
+                            <li><a href="/about/page?view=location&lang={{locale}}">위치안내<spring:message code="label.seoulauction.location" /></a></li>
+                            <li><a href="/about/page?view=faq&lang={{locale}}">FAQ<spring:message code="label.faq" /></a></li> 
+						 <p>Link</p>
+                         	<li><a href="/about/page?view=gnExhibition" ng-if="locale=='ko'">강남센터 Exhibition</a></li>
+                        <p>Family Site</p>
+	                         <li><a target="_blank" href="http://www.printbakery.co.kr" class="menu03">Printbakery<spring:message code="label.printbakery" /></a></li>
+                             <li><a target="_blank" href="https://www.auctionblue.com" class="menu01">AuctionBlue<spring:message code="label.AuctionBlueonline" /></a></li>
+                      </ul>
+                  </div>
+                  <div style="clear:both"> </div>
+                  <!--sh-->
+           </div>
+	</div>

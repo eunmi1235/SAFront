@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!DOCTYPE html>
+    <html lang="ko" ng-app="myApp">
+    <head>
+    <meta name="naver-site-verification" content="e43736eddfc3d46038024a9d2132da077391aadf"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>서울옥션</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">    
+        <meta name="description" content="미술품 경매를 통해 많은 사람들과 일상 속 예술의 경험과 기쁨을 나누고자 합니다.">
+        <meta name="keywords" content="미술품,경매,작품,미술,근현대,고미술,와인,보석,구매,판매,위탁,경매회사,갤러리,케이옥션,K옥션,seoulauction,auction">
+        <meta name="author" content="SeoulAuction">
+        <meta name="Copyright" content="SeoulAuction" /> 
+        <meta name="Claasification" content="회사소개, 미술품소개, 경매, 구매, 위탁" />       
+        <meta property="og:type" content="website"> 
+        <meta property="og:url" content="https://www.seoulauction.com">
+        <meta property="og:title" content="SeoulAuction">
+        <meta property="og:description" content="미술품 경매를 통해 많은 사람들과 일상 속 예술의 경험과 기쁨을 나누고자 합니다.">
+        <meta property="og:image" content="https://www.seoulauction.com/nas_img/front/homepage/201508122329463497773394954126.jpg"/>        
+        <meta property="al:web:url" content="https://www.seoulauction.com">
+    
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/icon/favic/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon/favic/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icon/favic/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/icon/favic/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/icon/favic/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="/images/icon/favic/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="/images/icon/favic/favicon-16x16.png" sizes="16x16"/> 
+        <meta name="application-name" content="SeoulAuction" />
+     
+        <link href="/css/old/common.css" rel="stylesheet" type="text/css"> 
+        <link href="/css/sa.common.2.0.css" rel="stylesheet" type="text/css">    
+        <link href="/css/sa.common.2.1.css" rel="stylesheet" type="text/css">
+        <link type="text/css" href="/css/imgzoom/magnific-popup.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!-- 아트컨실팅 및 후원 기증 페이지 웹아이콘 -->
+
+        <!-- 메인에만 -->
+        <link href="/css/old/onepcssgrid_new.css" rel="stylesheet" type="text/css"/>
+
+        <!-- 아이패드 버전 슬라이드 플러그인 -->
+        <link href="/css/jquery.bxslider.min.css" rel="stylesheet">
+        <link href="/css/main_bxslider.css" rel="stylesheet">
+        <!-- 모바일메뉴 --> 
+        <link rel="stylesheet" href="/css/topmenu02.css" type="text/css">          
+        
+        <!-- <link href="/css/custom.css" />" rel="stylesheet"> -->
+        <!--[if lt IE 9]>
+            <link href="/css/ie8-and-down.css" rel="stylesheet">
+        <![endif]-->
+    <!--     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.js"></script> -->
+        <script type="text/javascript" src="/js/angular/angular.min.js"></script>
+        <script src="/js/angular/angular-sanitize.js"></script>
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.4.9/angular-locale_ko-kr.min.js"></script> -->
+        <script type="text/javascript" src="/js/angular/angular-bind-html-compile.js"></script>
+        <script type="text/javascript" src="/js/angular/app.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    
+    <!--      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js" ></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js" ></script> 
+        <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script> 
+        <script type="text/javascript" src="/js/jquery.panzoom.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.slides.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.placeholder.min.js"></script>
+        <!-- <script type="text/javascript" src="/js/old/jquery.selectbox-0.2.js"></script>-->
+        <script type="text/javascript" src="/js/jquery.nicefileinput.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.mobile-events.js"></script> 
+        <script type="text/javascript" src="/js/iscroll.js"></script>
+        <script type="text/javascript" src="/js/old/ui.js"></script>
+        <script type="text/javascript" src="/js/old/frontCommon.js"></script>
+        <script type="text/javascript" src="/js/rightClick.js"></script> 
+        <script type="text/javascript" src="/js/imgzoom/jquery.magnific-popup.min.js"></script>
+
+        <!-- header, footer -->
+        <script type="text/javascript">
+            $(function(){
+                $(".header_wrap").load('./header.html');
+                $(".footer_wrap").load('./footer.html');
+            });
+        </script>
+
+         
+            <style>
+            #overlay {
+                position: fixed;
+                display: none;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                /* background-color: rgba(255,255,255,0.8); */
+                z-index: 999;
+                cursor: pointer;
+            }
+            
+            #text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 45px;
+                color: #33333;
+                background: #ffffff;
+                transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+            }
+            #closebtn{
+                position: absolute;
+                top: 0px;
+                right: 10px;
+                font-size: 35px;
+                color: #333333;
+            }
+            #textbg{
+                position: absolute;
+                /* top: 50%;
+                left: 50%; */
+                bottom: 0;
+                right: 0;
+                font-size: 43px;
+                color: #333333;
+                /* background: #ffffff; */
+                /* transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);  */
+                box-shadow: rgba(0,0,0,0.1) 1px 12px 9px 1px;
+            }
+            .layerbox_wrap {
+                overflow: hidden;
+                color: #fff;
+                max-width: 300px;
+            }
+            .layerbox {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+            .layer_tit {
+                font-size: 20px;
+                font-weight: bold;
+                display:block;
+                padding: 20px 0;
+            }
+            .layer_img img {
+                margin: 0 auto;
+                text-align: center;
+                max-width: 100%;
+                max-height: 100%;
+            }
+            input[type="checkbox"].overlay_checkbox{
+                margin-left: 20px;
+            }
+            @media screen and (max-width: 768px) {
+            #overlay {
+                position: fixed;
+                display: none;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                /* background-color: rgba(255,255,255,0.8); */
+                z-index: 999;
+                cursor: pointer;
+            }
+            #text{
+                font-size: 25px;
+            }
+            .layerbox_wrap {
+                max-width: 200px;
+            }
+            #closebtn {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .layer_tit {
+                font-size: 14px;
+            }
+            .layerbox {
+                font-size: 12px;
+            }
+            
+            }
+            
+            
+            </style>
+                <style>
+                .alert {
+                    padding: 20px;
+                    background-color: #f44336;
+                    color: white;
+                    font-size: 14px;
+                }
+                
+                .closebtn {
+                    margin-left: 20px;
+                    color: white;
+                    font-weight: bold;
+                    float: right;
+                    font-size: 40px;
+                    line-height: 15px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin-top: 10px;
+                }
+                
+                .closebtn:hover {
+                    color: black;
+                }
+                
+                /* YDH 추가. 2019.06.21 */
+                .video-popup.reveal {
+                  display: flex;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  justify-content: center;
+                  align-items: center;
+                  z-index:9
+                }
+                
+                .video-popup .video-wrapper iframe,
+                .video-popup .video-wrapper object,
+                .video-popup .video-wrapper embed {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                }
+                
+                .video-popup.reveal .video-popup-closer {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: rgba(0, 0, 0, .5);
+                  z-index: 9
+                }
+                </style>
+    </head>
+<body>
+<div class="header_wrap"></div>
+    <div class="mainContents_wrap" ng-controller="mainInfoCtl" data-ng-init="mainInfo()">
+        <div class="onepcssgrid-1200">
+            <!-- // 상단 이미지 배너 1개 (웹,모바일 둘 다) -->
+            <!-- <div class="col12 last" style="padding-top:10px; overflow:hidden">
+                 <a href="https://blog.naver.com/s_auction/221510924761" target="_blank">
+                    <img src="/images/img/main/ad/main_banner.jpg" alt="banner" alt="banner" style="width:100%;"/>
+                 </a>
+            </div> -->
+    
+              <!-- 상단 슬라이드 배너 (웹,모바일)-->
+               <div class="col12 last">
+                <div class="web_only">
+                    <div class="sub_banner02" id="top_slide_banner" style="margin-top:50px;">
+                        <a href="" class="sp_btn slidesjs-previous slidesjs-navigation"><span class="hidden">이전</span></a>
+                        <a href="" class="sp_btn slidesjs-next slidesjs-navigation"><span class="hidden">다음</span></a>
+                        <div><a href="https://www.royalsaluteart.kr" target="new"><img src="/images/img/main/ad/20200104_banner02.jpg" alt="banner" /></a></div>
+                        <div><a href="https://blog.naver.com/s_auction/221510924761" target="new"><img src="/images/img/main/ad/main_banner.jpg" alt="banner" alt="banner" /></a></div>
+                    </div>
+                </div><!-- //web_only -->
+    
+                <div class="m_only">
+                    <div class="sub_slide">
+                        <div class="bxslider">
+                            <div class="sub_banner02">
+                                <div><a href="https://www.royalsaluteart.kr" target="new"><img src="/images/img/main/ad/20200104_banner02.jpg" alt="banner" /></a></div>
+                            </div>
+                            <div class="sub_banner02">
+                                <div><a href="https://blog.naver.com/s_auction/221510924761" target="new"><img src="/images/img/main/ad/main_banner.jpg" alt="banner" alt="banner" /></a></div>			            			</div>
+                        </div>
+                    </div>
+                </div><!--//m_only -->
+              </div> 
+            <!-- //상단 슬라이드 배너 -->
+            <div class="onerow"></div>
+            <h2 class="mainContents_tit">AUCTION</h2>
+    
+            <!-- 제로베이스 -->
+            <div class="col4">
+                <a href="/currentAuction?sale_outside_yn=Y&sale_no=732#page1">
+                    <img src="/images/img/main/auction_sum/20220811.jpg" style="width:100%;"/>
+                </a>
+                <p style="padding-top:30px; padding-bottom:5px; font-size:12px;">Auction</p>
+                <p class="mainContents_txt" ng-if="locale=='ko'">ZEROBASE 정은혜</p>
+                <p class="mainContents_txt" ng-if="locale!='ko'">ZEROBASE Jung EunHye</p>
+                <div style="clear:both;"></div>
+            </div>
+    
+            <!-- 블랙랏 -->
+            <div class="col4">
+                <a href="/currentAuction?sale_outside_yn=Y&sale_no=737#page1">
+                    <img src="/images/img/main/auction_sum/20220824.jpg" style="width:100%;"/>
+                </a>
+                <p style="padding-top:30px; padding-bottom:5px; font-size:12px;">Auction</p>
+                <p class="mainContents_txt" ng-if="locale=='ko'">ZEROBASE 전남</p>
+                <p class="mainContents_txt" ng-if="locale!='ko'">ZEROBASE JEONNAM</p>
+                <div style="clear:both;"></div>
+            </div>
+    
+            <!-- 커밍순 썸네일 -->
+            <div class="col4 last">
+                <img src="/images/img/main/auction_sum/20190613.jpg" style="width:100%;"/>
+                <p style="padding-top:30px; padding-bottom:5px; font-size:12px;">Auction</p>
+                <p class="mainContents_txt"></p>
+                <div style="clear:both;"></div>  
+            </div>
+    
+              <div class="onerow"></div>
+                    <h2 class="mainContents_tit">VIDEO</h2>
+                    <div class="col8" style="overflow:hidden">
+                      <div class="popupVideo">
+    	                  <a data-video="j8C_p9f8FyQ?start=30">
+                          <a data-video="YIcWgugf_fU">
+                              <img src="/images/img/main/video/2022081901.jpg" style="width:100%; cursor:pointer;" alt="video1"/>
+                          </a>
+                          <div class="video-popup">
+                              <div class="video-popup-closer"></div> 
+                          </div>
+                          <p class="web_only mainContents_txt" style="padding-top: 20px; font-size:14px;" ng-if="locale=='ko'">WALK THROUGH WITH THE SPECIALIST | 168th ART AUCTION _ Modern & Contemporary Art</p>
+                          <p class="web_only mainContents_txt" style="padding-top: 20px; font-size:14px;" ng-if="locale!='ko'">WALK THROUGH WITH THE SPECIALIST | 168th ART AUCTION _ Modern & Contemporary Art</p>
+                      </div>
+                 </div>
+                  <div class="col4 last" style="overflow:hidden">
+                      <div class="popupVideo">
+                          <a data-video="QlmUzeqfjG4">
+                              <img src="/images/img/main/video/2022081902.jpg" style="width:100%; cursor:pointer;" alt="video2"/>
+                          </a>
+                          <div class="video-popup">
+                              <div class="video-popup-closer"></div>
+                          </div>
+                          <p class="web_only mainContents_txt" style="padding-top: 20px; font-size:14px;" ng-if="locale=='ko'">WALK THROUGH WITH THE SPECIALIST | 168TH ART AUCTION _ Korean Traditional Art</p>
+                          <p class="web_only mainContents_txt" style="padding-top: 20px; font-size:14px;" ng-if="locale!='ko'">WALK THROUGH WITH THE SPECIALIST | 168TH ART AUCTION _ Korean Traditional Art</p>
+                    </div>
+    
+                     <span class="m_only"><img src="/images/img/main/video/00.jpg" style="width:100%;" alt="높이용"/></span>
+    
+                    <div class="popupVideo">
+                        <a data-video="FYHf5I5Iqkg">
+                            <img src="/images/img/main/video/2022081903.jpg" style="width:100%; cursor:pointer;" alt="video3"/>
+                        </a>
+                        <div class="video-popup">
+                            <div class="video-popup-closer"></div>
+                        </div>
+                        <p class="web_only mainContents_txt" style="padding-top: 20px; font-size:14px;" ng-if="locale=='ko'">WHAT'S ON AT SA | 168th ART AUCTION</p>
+                        <p class="web_only mainContents_txt" style="padding-top: 20px; font-size:14px;" ng-if="locale!='ko'">WHAT'S ON AT SA | 168th ART AUCTION</p>
+                    </div>
+                  </div>
+    
+            <div class="onerow"></div>
+            
+            <!-- 강남센터 전시 -->
+            <div class="col6" style="overflow:hidden">
+                <h2 class="mainContents_tit mainContents_tit_mver">
+                     <p ng-if="locale=='ko'">서울옥션 강남센터</p><p ng-if="locale!='ko'">Gangnam Center</p>
+                </h2>
+                <a href="/about/page?view=gnExhibition">
+                    <img src="/images/img/main/gang/sa21.jpg" style="width:100%; hight:auto;"/>
+                </a>
+            </div> 
+            
+            <!-- 아카데미 -->
+            <div class="col6 last" style="padding-top:50px; overflow:hidden">
+                <h2 class="mainContents_tit mainContents_tit_mver">
+                    <spring:message code="label.academy" />
+                </h2>
+                <a href="/academyArtauctionView?academy_no=104">
+                    <img src="/images/img/main/aca/aca38.jpg" style="width:100%; hight:auto;"/>
+                </a>
+            </div>
+    
+            <div class="onerow"></div>
+            <div class="col6 web_only">
+                <h2 class="mainContents_tit" style="border-bottom: 2px solid #000;">
+                    <a href="/noticeList">공지사항</a>
+                </h2>
+                <div id="recentNoticeContainer" ng-controller="recentNoticeCtl" data-ng-init="loadRecentNotice();">
+                    <ul>
+                        <span ng-if="locale=='ko'"><li ng-repeat="row in recentList" class="mainContent_notice"><a href="/noticeView?write_no={{row.WRITE_NO}}">notice 공지사항</a></li></span>
+                        <span ng-if="locale!='ko'"><li ng-repeat="row in recentList" class="mainContent_notice"><p ng-if="row.TITLE_EN != null || row.TITLE_EN != ''"><a href="/noticeView?write_no={{row.WRITE_NO}}">notice 공지사항</a></p></li></span>
+    
+                    </ul>
+                </div>
+          </div>
+          <div class="col6 last web_only">
+              <h2 class="mainContents_tit" style="border-bottom: 2px solid #000;"><a href="/about/page?view=pressList">언론보도</a></h2>
+                <div id="recentPressContainer" ng-controller="recentPressCtl" data-ng-init="loadRecentPress();">
+                    <ul>
+                        <span ng-if="locale=='ko'"><li ng-repeat="row in recentPressList" class="mainContent_notice"><a href="{{row.PRESS_URL}}" target="new">News 언론보도</a></li></span>
+                        <span ng-if="locale!='ko'"><li ng-repeat="row in recentPressList" class="mainContent_notice"><a href="{{row.PRESS_URL_EN}}" target="new">News 언론보도</a></p></li></span>
+                    </ul>
+                </div>
+          </div>
+    
+          <div class="onerow"></div>
+          <div class="col12 last">
+              <h2 class="mainContents_tit">HOW TO</h2>
+              <div class="col3">
+              <a href="/auctionGuide/page?view=biddingGuide"><img src="/images/img/main/howto/02.jpg" style="width:100%;"/></a>
+              <p class="mainContents_txt" style="padding-top: 20px;"><spring:message code="label.howto.auction" /></p>
+              </div>
+              <div class="col3">
+              <a href="/auctionGuide/page?view=commissionGuide"><img src="/images/img/main/howto/05.jpg" style="width:100%;"/></a>
+              <p class="mainContents_txt" style="padding-top: 20px;"><spring:message code="label.howto.contract" /></p>
+              </div>
+              <div class="col3">
+              <a href="/auctionGuide/page?view=priGuide"><img src="/images/img/main/howto/07.jpg" style="width:100%;"/> </a>
+              <p class="mainContents_txt" style="padding-top: 20px;"><spring:message code="label.howto.PRIVATE" /></p>
+              </div>
+              <div class="col3 last">
+              <a href="/join/agree"><img src="/images/img/main/howto/06.jpg" style="width:100%;"/></a>
+              <p class="mainContents_txt" style="padding-top: 20px;"><spring:message code="label.agree" /></p>
+              </div>
+          </div>
+    
+          <div class="onerow"></div>
+          <h2 class="mainContents_tit">FAMILY SITE</h2>
+          <div class="col4">
+              <a href="https://www.auctionblue.com" target="_blank"><img src="/images/img/main/ect/blue.jpg" style="width:100%;"/></a>
+              <p class="mainContents_txt" style="padding-top: 20px;"><spring:message code="label.AuctionBlueonline" /></p>
+          </div>
+          <div class="col4">
+              <a href="https://printbakery.com/" target="_blank"><img src="/images/img/main/ect/20220225_01.png" style="width:100%;"/></a>
+              <p class="mainContents_txt" style="padding-top: 20px;"><spring:message code="label.printbakery" /></p>
+          </div>
+          <div class="col4 last">
+              <a href="https://www.youtube.com/channel/UCITsbs0m_QpXwZSZ-jc3ORA" target="_blank">
+                  <img src="/images/img/main/ect/20220331.png" style="width:100%;"/>
+              </a>
+              <!-- <p style="padding-top:30px; padding-bottom:30px; font-size:18px; font-weight:600;" ng-if="locale=='ko'"><Bon Voyage : Kim Sun woo></p> -->
+              <p class="mainContents_txt" style="padding-top: 20px;" ng-if="locale=='ko'">PRINT BAKERY YOUTUBE</p>
+              <p class="mainContents_txt" style="padding-top: 20px;" ng-if="locale!='ko'">PRINT BAKERY YOUTUBE</p>
+          </div>
+    
+    
+          <div class="onerow"></div>
+    
+            <div class="col12 last">
+                <div class="web_only">
+                    <!-- 배너 1개 일 때 -->
+                    <a href="https://sotwo.com/" target="_blank">
+                        <img src="/images/img/main/ad/20220509_banner.jpg" alt="banner" style="width:100%; vertical-align: auto;"/>
+                    </a>
+                    <!-- <div class="sub_banner02" id="slides01" style="margin-top:50px;">
+                        <a href="" class="sp_btn slidesjs-previous slidesjs-navigation"><span class="hidden">이전</span></a>
+                        <a href="" class="sp_btn slidesjs-next slidesjs-navigation"><span class="hidden">다음</span></a>
+                        <div class="sub_banner02">
+                            <div>
+                                <a href="https://xxblue.com/so2/sales/list/">
+                                    <img src="/images/img/main/ad/2021040501.jpg" alt="banner" target="_blank"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div><a href="http://www.rarebyblue.com/" target="new"><img src="/images/img/main/ad/03.jpg" alt="banner" /></a></div>
+                        <div><a href="http://www.rarebyblue.com/" target="new"><img src="/images/img/main/ad/04.jpg" alt="banner" /></a></div>
+                    </div> -->
+                </div> <!-- //web_only -->
+    
+                <div class="m_only">
+                    <!-- 배너 1개 일 때 -->
+                    <a href="https://sotwo.com/" target="_blank">
+                        <img src="/images/img/main/ad/2021040501.jpg" alt="banner" style="width:100%; vertical-align: auto;"/>
+                    </a>
+                    <!-- <div class="sub_slide">
+                        <div class="bxslider">
+                            <div class="sub_banner02">
+                                <div>
+                                    <a href="https://xxblue.com/so2/sales/list/">
+                                        <img src="/images/img/main/ad/2021040501.jpg" alt="banner" target="_blank"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sub_banner02">
+                                <div><a href="http://www.rarebyblue.com/" target="new"><img src="/images/img/main/ad/03.jpg" alt="banner" /></a></div>
+                            </div>
+                            <div class="sub_banner02">
+                                <div><a href="http://www.rarebyblue.com/" target="new"><img src="/images/img/main/ad/04.jpg" alt="banner" /></a></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--// sub_slide -->
+                </div><!--//m_only -->
+            </div><!-- //col12 last (슬라이드)-->
+          <div class="onerow"></div>
+        </div><!-- //onepcssgrid-1200 -->
+    </div>
+    
+    
+    <!-- 비번 초기화 변경 팝업 -->
+    <div class="new_passwordbox" style="display: none;" id="pwResetLay" ng-controller="mainInfoCtl">
+        <div class="new_pwbox">
+            <h1 class="new_pwh1">
+                <span></span><!-- //logo css 지우면 안됨 -->
+                초기화 비밀번호 변경 안내
+            </h1>
+    
+            <div class="pw_info">
+                <p>
+                    <span style="font-weight:bold; display: inline-block; margin-bottom: 10px;">[초기화 비밀번호 : sareset]</span><br>
+                    현재 비밀번호 초기화 되어 안전한 회원정보 유지를 위해
+                    반드시 비밀번호를 변경해 주시기 바랍니다.<br>
+                    <span style="color: #f00; font-size: 12px; font-weight: bold;">(비밀번호는 영문자, 숫자, 특수문자의 조합으로 4~14자로 입력해주세요.)</span>
+                </p>
+    
+                <div class="new_pw_form">
+                    <form>
+                        <label for="NewPw">새 비밀번호</label>
+                        <input type="password" id="NewPw" name="NewPw" />
+                    </form>
+                    <form>
+                        <label for="NewPwConform">새 비밀번호 확인</label>
+                        <input type="password" id="NewPwConform" name="NewPwConform" />
+                    </form>
+                </div>
+    
+                <div class="new_pw_closebtn">
+                    <button class="new_pw_change" ng-click="pwdChange()">변경</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_wrap clearfix"></div>
+    
+    
+    <!-- 국문 레이어팝업 --> 
+    <c:if test="${locale == 'ko'}">
+        <div id="overlay" onclick="off()">
+            <div id="textbg">
+                <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <div class="layerbox_wrap">
+                    <div class="layer_img">
+                        <!-- <p class="layer_tit" style="text-align:center;">
+                            [제로베이스 더 페인터스 진행 오류 안내]
+    
+                        </p>
+                        <p class="layerbox" style="padding: 10px 0 20px; text-align:center; font-weight: bold;">
+                            현재 홈페이지 접속 오류로 인해 제로베이스 경매가 일시중시되었습니다. <br>
+                            내부적으로 빠른 복구를 위해 확인 중에 있습니다.<br>
+                            경매는 Lot.35 정지윤 작가님의 작품부터 15시10분에 재진행하도록 하겠습니다.<br><br>
+    
+                            고객 여러분들의 양해 부탁드립니다.
+    
+    
+    
+                             <span style="font-weight:bold; text-align: right; margin: 20px 0 0; display:block;">
+                                -서울옥션 임직원 일동-
+                            </span>
+                        </p> --> 
+    
+                        <!--<a href="/noticeView?write_no=5507" style="display:block; text-align:center;">--> 
+                            <img src="/images/img/main/overlay/20220402_thanks_to.png" alt="layerpopup">
+                        <!-- </a> -->
+    
+                        <!-- <a href="" style="display:block;">
+                            <img src="/images/img/main/overlay/20220127_2.jpeg" alt="layerpopup" style= "text-align:center; ">
+                        </a> -->
+    
+                        <!-- <a href="/currentAuction?sale_kind=zerobase_only&page=1&lang=ko#page1" style="display:block;" target="_blank">
+                            <img src="/images/img/main/overlay/2021052403.jpg" alt="layerpopup" style="max-height:245px; text-align:center;">
+                        </a> -->
+    
+                        <!-- 버튼 -->
+                        <!-- <a href="/currentAuction?sale_kind=online_only" class="btn_main_more green" style="width:80px;">상세 보기</a>
+                        <a href="/noticeView?write_no=3518" class="btn_main_more green" style="width:80px;">자세히 보기</a> -->
+                    </div>
+                </div> <!-- //layerbox_wrap -->
+                <!-- 오늘하루 안보기 버튼 -->
+                <div style="background-color: #fff;">
+                    <input class="overlay_checkbox" type="checkbox" name="close" value="OK" onclick="javascript:closeWin('overlay', 1);"/>
+                    <font style="font-size:12px; vertical-align: middle;" onclick="javascript:closeWin('overlay', 1);">하루동안 이 창을 열지 않음</font>
+                </div>
+             </div>
+        </div>
+    </c:if>
+    
+    
+    <!-- 영문 레이어팝업 -->
+     <c:if test="${locale!= 'ko'}">
+        <div id="overlay" onclick="off()">
+            <div id="textbg">
+                <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <div class="layerbox_wrap">
+                    <!-- <p class="layer_tit">
+                           ＜The unit price per onilne auction bid amount＞
+                       </p>
+                    <p class="layerbox">
+                        February Online Auction Location of Exhibition –<br/>
+                        Seoul Auction Space (Head Office, Pyeongchang Dong) <br/>
+                        Dear Collectors, <br/>
+                        I wish you and your loved ones health, happiness, prosperity,<br/>
+                        and peace this holiday season.<br/>
+                        Merry Christmas and Happy new year!
+                        <span style="font-weight:bold; text-align: right; margin: 20px 0 0; display:block;">
+                            Warm regards, SEOUL AUCTION Team
+                        </span>
+                    </p>
+                    <!--<a href="/currentAuction?sale_kind=online_only" class="btn_main_more green" style="width:80px;">SEE MORE</a>
+                    <a href="/noticeView?write_no=3518" class="btn_main_more green" style="width:80px;">NOTICE</a> -->
+    
+    
+                    <!-- 이미지 레이어 팝업-->
+                    <div class="layer_img">
+    <!--     	    		<a href="/noticeView?write_no=5507" style="display:block; text-align:center;" target="_blank">    -->
+    <!--                         <img src="/images/img/main/overlay/20220127_en.jpg" alt="layerpopup" style="text-align:center;">  -->
+    <!--                     </a>    -->
+    
+                        <!-- 이미지 두개 -->
+                        <a href="/noticeView?write_no=5507" style="display:block; text-align:center;">
+                            <img src="/images/img/main/overlay/20220203-en.jpg" alt="layerpopup" style="text-align:center; margin-bottom: 10px;">
+                        </a>
+    
+                        <!-- <a href="" style="display:block;" target="_blank">
+                            <img src="/images/img/main/overlay/20220127_2.jpeg" alt="layerpopup" style="text-align:center;">
+                        </a> -->
+                    </div><!-- //layer_img -->
+                </div> <!-- //layerbox_wrap -->
+                <input type="checkbox" name="close" value="OK" onclick="javascript:closeWin('overlay', 1);"/>
+                <font style="font-size:12px; vertical-align:middle;">&nbsp;&nbsp;Do not open this window for one day</font>
+            </div>
+        </div>
+    </c:if> 
+    
+    <script>
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+        if(isMobile.any()){
+            /* m_only banner slider */
+            $(".sub_slide .bxslider").bxSlider({
+                auto:true,
+                pause: 4000,
+                pager: true,
+            });
+        } else {
+            /* web_only banner slider */
+            $(function() {
+                $('#slides01,#top_slide_banner').slidesjs({
+                    height : 180,//??
+                    navigation : false,
+                    start : 1,
+                    play : {
+                        auto : true,
+                    }
+                });
+            });
+        };
+    </script>
+    
+    
+    
+    <script>
+    // overlay 사용 (국문만 사용시 사용)
+    /*$(window).ready(function(){
+    var blnCookie = getCookie("overlay");
+    if(!blnCookie == false){
+        document.getElementById("overlay").style.display = "none";
+    } else {
+        if( "${locale}" == "ko" ){
+            document.getElementById("overlay").style.display = "block";
+        }
+    }
+    });
+    
+    // overlay 사용 (국문영문모두사용시 사용)
+    $(window).ready(function(){
+    var blnCookie = getCookie("overlay");
+    if(!blnCookie == false){
+        document.getElementById("overlay").style.display = "none";
+    } else {
+            document.getElementById("overlay").style.display = "block";
+    }
+    });
+    
+    
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+    }
+    */ 
+    
+    //창닫기(overlay)
+    function closeWin(winName, expiredays) {
+       setCookie( winName, "done" , expiredays);
+       var obj = eval( "window." + winName );
+       obj.style.display = "none";
+    }
+    
+    
+    // 쿠키 가져오기
+    function getCookie( name ) {
+       var nameOfCookie = name + "=";
+       var x = 0;
+       while ( x <= document.cookie.length )
+       {
+           var y = (x+nameOfCookie.length);
+           if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+               if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+                   endOfCookie = document.cookie.length;
+               return unescape( document.cookie.substring( y, endOfCookie ) );
+           }
+           x = document.cookie.indexOf( " ", x ) + 1;
+           if ( x == 0 )
+               break;
+       }
+       return "";
+    }
+    </script>
+    <!-- overlay --><!-- sh -->
+    
+    
+    <!-- Video -->
+    <script>
+    
+        $(".popupVideo a").click(function() {
+              $(".video-popup").addClass("reveal"),
+              $(".video-popup .video-wrapper").remove(),
+              $(".video-popup").append("<div class='video-wrapper'><img class='videoclose_btn' src='/images/icon/close_white_24dp.svg'><div class='videoBox'><iframe width='1280' height='720' src='https://youtube.com/embed/" + $(this).data("video") + "' allow='autoplay; encrypted-media' allowfullscreen></iframe></div></div>"),
+              $(".video-popup").find("img.videoclose_btn").click(function(){// 닫기버튼 추가 (2021.11.30 em) ,
+                  $(".video-popup .video-wrapper").remove(),
+                  $(".video-popup").removeClass("reveal")
+              });
+        }),
+        $(".video-popup-closer").click(function() {
+          $(".video-popup .video-wrapper").remove(),
+          $(".video-popup").removeClass("reveal")
+        });
+    
+    </script>
+    
+    
+    
+    <div style="clear:both;"></div>
+</body>
+</html>
