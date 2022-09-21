@@ -3653,7 +3653,7 @@ table .wrap_check.type03 > div {
   z-index: 12;
   /*z-index:6;*/
   width: 100%;
-  padding-top: 163px;
+  padding-top: 100px;
   /*background: url(/images/bg/bg_down_shadow.png) repeat-x 0 780px;*/
 }
 /* 그림자만큼 패딩 */
@@ -5423,11 +5423,11 @@ table .wrap_check.type03 > div {
   margin: 0 5px;
   margin-bottom: 10px;
   
-  width: calc(100% / 4 - 10px);
-  width: -webkit-calc(100% / 4 - 10px);
-  width: -moz-calc(100% / 4 - 10px);
-  width: -o-calc(100% / 4 - 10px);
-  width: -ms-calc(100% / 4 - 10px);     
+  width: calc(100% / 4 - 13px);
+  width: -webkit-calc(100% / 4 - 13px);
+  width: -moz-calc(100% / 4 - 13px);
+  width: -o-calc(100% / 4 - 13px);
+  width: -ms-calc(100% / 4 - 13px);
 }
 .auction_h_list ul li .wraph {
   width: auto;  

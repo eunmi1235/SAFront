@@ -3760,11 +3760,11 @@ table.artcon_table {
 	display: block;
 }
 .auction_h_list ul li {
-	width: calc(100% / 3 - 10px);
-	width: -webkit-calc(100% / 3 - 10px);
-	width: -ms-calc(100% / 3 - 10px);
-	width: -moz-calc(100% / 3 - 10px);
-	width: -o-calc(100% / 3 - 10px);
+	width: calc(100% / 3 - 13px);
+	width: -webkit-calc(100% / 3 - 13px);
+	width: -ms-calc(100% / 3 - 13px);
+	width: -moz-calc(100% / 3 - 13px);
+	width: -o-calc(100% / 3 - 13px);
 }
 .account_list {
 	width: 33.33%;
@@ -4215,11 +4215,11 @@ gnb_menu_layer .web_menu_left {
 	line-height: 23px;
 }
 .auction_h_list ul li {
-	width: calc(100% / 2 - 10px);
-	width: -webkit-calc(100% / 2 - 10px);
-	width: -moz-calc(100% / 2 - 10px);
-	width: -ms-calc(100% / 2 - 10px);
-	width: -o-calc(100% / 2 - 10px);
+	width: calc(100% / 2 - 13px);
+	width: -webkit-calc(100% / 2 - 13px);
+	width: -moz-calc(100% / 2 - 13px);
+	width: -ms-calc(100% / 2 - 13px);
+	width: -o-calc(100% / 2 - 13px);
 }
 .auction_list > ul > li .auction_list_hidden_box .img {
    width: 270px !important;
@@ -4836,6 +4836,12 @@ li.li_h2 {
 	margin-left:0;
 	padding-left: 0;
 	margin-top: 30px;
+}
+.auction_h_list ul li  {
+	width:100%;
+	display: block; 
+	margin: 0;
+	margin-bottom: 50px;
 }
 .newsletter_gridwrap {
 	width: 100%;
