@@ -3285,7 +3285,8 @@ table .wrap_check.type03 > div {
 .gnb_menu_layer {
   position: absolute;
   top: 68px;
-  left: -712px;
+  /* left: -712px; */
+  left:-100%; 
   overflow: hidden;
   /*width:0;*/
   background: #ffffff url(/images/bg/bg_gnb_layer.gif) repeat-y 100% 0;  
@@ -8567,7 +8568,7 @@ Released under the MIT License <https://www.opensource.org/licenses/mit-license.
    background-size: 250px auto;
 }
 .main .footer_wrap #footer {
-   background: url(/images/mobile/bg/bg_frame_b.png) repeat-x 0 0;
+   /* background: url(/images/mobile/bg/bg_frame_b.png) repeat-x 0 0; */
    background-size: 4px auto;
 }
 .main .shadow {
