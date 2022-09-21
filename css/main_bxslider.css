@@ -20,7 +20,7 @@
 }  
 .m_ver_sliderwrap .bx-wrapper .bx-prev,
 .m_ver_sliderwrap .bx-wrapper .bx-next {
-	background: url(/images/mobile/btn/sprite_btn_re.png) no-repeat 0 0;
+	background: url(./images/mobile/btn/sprite_btn_re.png) no-repeat 0 0;
 	width: 30px;
 	height: 47px;
 	background-size: 250px auto;
@@ -56,7 +56,7 @@
 	width: auto;        
 }  
 .m_ver_sliderwrap .bx-wrapper .bx-controls-auto .bx-start {
-	background: url(/images/mobile/btn/play_pause.png) no-repeat 0 0;    
+	background: url(./images/mobile/btn/play_pause.png) no-repeat 0 0;    
 	width: 10px; 
 	height: 11px;  
 	display: block; 
@@ -64,7 +64,7 @@
 	margin: 0 5px;   
 }
 .m_ver_sliderwrap .bx-wrapper .bx-controls-auto .bx-stop {
-	background: url(/images/mobile/btn/play_pause.png) no-repeat 0 0;    
+	background: url(./images/mobile/btn/play_pause.png) no-repeat 0 0;    
 	width: 10px; 
 	height: 10px;  
 	background-position: 0 -44px; 

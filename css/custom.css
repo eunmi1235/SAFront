@@ -1,11 +1,11 @@
 @charset "utf-8";
 @media all and (min-width: 768px) and (max-width: 1024px) {
   .main .shadow.right .img_logo_v {
-    background-image: url(/images/mobile/img/img_logo_v.png);
+    background-image: url(./images/mobile/img/img_logo_v.png);
     background-size: 12px auto;
   }
   .main_btn_updown button {
-    background-image: url(/images/mobile/btn/sprite_main_btn.png);
+    background-image: url(./images/mobile/btn/sprite_main_btn.png);
     background-size: 81px auto;
   }
   .main_btn_updown button.scroll_up {
@@ -21,7 +21,7 @@
     background-position: -37px 0;
   }
   .cont_artist a span {
-    background-image: url(/images/mobile/bg/bg_main_bullet.png);
+    background-image: url(./images/mobile/bg/bg_main_bullet.png);
     background-size: 14px auto;
     background-position: 100% -38px;
   }
@@ -29,7 +29,7 @@
     background-position: 100% -63px;
   }
   .cont_list li {
-    background-image: url(/images/mobile/bg/bg_main_bullet.png);
+    background-image: url(./images/mobile/bg/bg_main_bullet.png);
     background-size: 14px auto;
     background-position: 0 6px;
   }
@@ -37,12 +37,12 @@
     background-position: 0 -13px;
   }
   .pop .pop_btn_close {
-    background-image: url(/images/mobile/btn/sprite_main_btn.png);
+    background-image: url(./images/mobile/btn/sprite_main_btn.png);
     background-size: 81px auto;
     background-position: 0 -115px;
   }
   .pop .roll_btn button {
-    background-image: url(/images/mobile/btn/sprite_main_btn.png);
+    background-image: url(./images/mobile/btn/sprite_main_btn.png);
     background-size: 81px auto;
   }
   .pop .roll_btn button.btn_prev {
@@ -197,14 +197,14 @@
 
   .header_wrap {
     position: static;
-	 background: url(/images/mobile/bg/bg_check.png) repeat 0 0;
+	 background: url(./images/mobile/bg/bg_check.png) repeat 0 0;
     background-size: 2px auto;
   }
   #header {
     margin: 0;
     padding: 0;
     height: 55px;
-    background: url(/images/mobile/bg/bg_check.png) repeat 0 0;
+    background: url(./images/mobile/bg/bg_check.png) repeat 0 0;
     background-size: 2px auto;
   }
   #header > .gnb_menu {
@@ -223,7 +223,7 @@
   #header > .gnb_menu > ul > li:first-child a {
     width: 26px;
     height: 26px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   #header h1 {
@@ -233,7 +233,7 @@
   #header h1 a {
     width: 144px;
     height: 32px;
-    background: url(/images/mobile/img/sprite_img.png) no-repeat 0 0;
+    background: url(./images/mobile/img/sprite_img.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   #header .util_menu {
@@ -275,7 +275,7 @@
   #header .gnb_menu_layer .m_util_menu {
     height: 35px;
     padding: 20px 10px 0 40px;
-    background: url(/images/mobile/bg/bg_check.png) repeat 0 0;
+    background: url(./images/mobile/bg/bg_check.png) repeat 0 0;
     background-size: 2px auto;
     text-align: center;
   }
@@ -283,7 +283,7 @@
     display: inline-block;
     float: none;
     padding: 0 11px 0 14px;
-    background: url(/images/mobile/bg/bg_util_bar.gif) no-repeat 0 4px;
+    background: url(./images/mobile/bg/bg_util_bar.gif) no-repeat 0 4px;
     background-size: 1px auto;
     text-align: center;
   }
@@ -301,7 +301,7 @@
     padding-right: 0;
   }
   #header .gnb_menu_layer .btn_gnbmenu_close {
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
     background-position: -29px -81px;
   }
@@ -322,7 +322,7 @@
     width: 120px;
     height: 12px;
     margin: 0 auto;
-    background: url(/images/mobile/img/txt_gnbmenu.png) no-repeat 0 0;
+    background: url(./images/mobile/img/txt_gnbmenu.png) no-repeat 0 0;
     background-size: 56px auto;
   }
   #header .gnb_menu_layer .gnb_menu > ul > li > span.menu01 {
@@ -374,7 +374,7 @@
     display: block;
     width: 26px;
     height: 26px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
     background-position: -29px 0;
   }
@@ -410,7 +410,7 @@
     width: 50%;
     padding: 10px 0 8px;
     text-align: center;
-    background: url(/images/mobile/bg/bg_submenu_bar.gif) no-repeat 0 25px;
+    background: url(./images/mobile/bg/bg_submenu_bar.gif) no-repeat 0 25px;
     background-size: 1px auto;
     border-top: 1px solid #ddd;
   }
@@ -469,7 +469,7 @@
     height: 19px;
     left: 50%;
     margin-left: -19px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
     background-position: -69px -73px;
   }
@@ -514,7 +514,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
     margin-right: 0;
     margin-left: 0;
@@ -593,7 +593,7 @@
   .mbtn {
     width: 32px;
     height: 30px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   .mbtn span {
@@ -643,7 +643,7 @@
   input[type="radio"] {
     width: 12px;
     height: 12px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   input[type="checkbox"] {
@@ -666,7 +666,7 @@
     padding-right: 28px;
     border: 1px solid #ddd;
     height: 32px;
-    background: url(/images/mobile/btn/btn_select.gif) no-repeat 100% 0;
+    background: url(./images/mobile/btn/btn_select.gif) no-repeat 100% 0;
     background-size: 28px auto;
   }
   .fl_wrap input[type="text"],
@@ -805,7 +805,7 @@
   }
   .list_style01 > ul > li {
     padding-left: 8px;
-    background: url(/images/mobile/bg/bul_box.png) no-repeat 0 8px;
+    background: url(./images/mobile/bg/bul_box.png) no-repeat 0 8px;
     background-size: 3px auto;
   }
   .list_style03.type02 li strong,
@@ -813,16 +813,16 @@
     float: none;
   }
   .notice_style01 {
-    background-image: url(/images/mobile/bg/bul_excla.png);
+    background-image: url(./images/mobile/bg/bul_excla.png);
     background-size: 12px auto;
   }
   .notice_style02 {
-    background-image: url(/images/mobile/bg/bul_check.png);
+    background-image: url(./images/mobile/bg/bul_check.png);
     background-size: 12px auto;
   }
   .txt_dot {
     padding-left: 8px;
-    background: url(/images/mobile/bg/bul_box.png) no-repeat 0 6px;
+    background: url(./images/mobile/bg/bul_box.png) no-repeat 0 6px;
     background-size: 3px auto;
   }
   .list_top.type02 {
@@ -846,7 +846,7 @@
     width: 20px;
     height: 20px;
     margin: 0;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   .ex_list_area .btns button.btn_prev {
@@ -902,7 +902,7 @@
     background-size: 74px auto;
   }
   .bg_img.bg08 {
-    background-image: url(/images/mobile/bg/bg_img08.gif);
+    background-image: url(./images/mobile/bg/bg_img08.gif);
   }
   .tab_wrap.wide {
     margin-top: 0;
@@ -1114,7 +1114,7 @@
     margin-top: -23px !important;
     width: 30px !important;
     height: 47px !important;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   .arrow_btns button.prev {
@@ -1132,7 +1132,7 @@
     margin-left: -50%;
   }
   .dot_btns > div a {
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
     background-position: -34px -51px;
   }
@@ -1226,7 +1226,7 @@
     float: left;
     width: 78px;
     padding: 0 0 0 17px;
-    background-image: url(/images/mobile/bg/sprite_bul.png);
+    background-image: url(./images/mobile/bg/sprite_bul.png);
     background-repeat: no-repeat;
     background-size: 25px auto;
     background-position: -6px 1px;
@@ -1314,12 +1314,12 @@
     width: 50%;
   }
   .bid_form > div .wrap .btns .sp_btn.btn_bid_up {
-    background: #00acac url(/images/mobile/bg/bul_plus.png) no-repeat 50% 50%;
+    background: #00acac url(./images/mobile/bg/bul_plus.png) no-repeat 50% 50%;
     background-size: 14px auto;
   }
   .bid_form > div .wrap .btns .sp_btn.btn_bid_down {
     margin-top: 0;
-    background: #555555 url(/images/mobile/bg/bul_minus.png) no-repeat 50% 50%;
+    background: #555555 url(./images/mobile/bg/bul_minus.png) no-repeat 50% 50%;
     background-size: 14px auto;
   }
   .bid_table {
@@ -1428,7 +1428,7 @@
     margin: -23px 0 0 0;
     width: 30px;
     height: 47px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   .upcoming .sub_banner .slidesjs-navigation.slidesjs-previous {
@@ -1733,7 +1733,7 @@
   }
   .auction_list.bid03 .m_state span {
     padding-left: 17px;
-    background-image: url(/images/mobile/bg/sprite_bul.png);
+    background-image: url(./images/mobile/bg/sprite_bul.png);
     background-repeat: no-repeat;
     background-size: 25px auto;
     background-position: 0 -98px;
@@ -1807,7 +1807,7 @@
     top: 41px;
     width: 23px;
     height: 23px;
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   .m_location .btns button.btn_prev {
@@ -1883,7 +1883,7 @@
     display: none;
   }
   .img_represent .btns button {
-    background: url(/images/mobile/btn/sprite_btn.png) no-repeat 0 0;
+    background: url(./images/mobile/btn/sprite_btn.png) no-repeat 0 0;
     background-size: 250px auto;
   }
   .img_represent .btns button.btn_prev {
@@ -2375,7 +2375,7 @@
     margin: 0;
   }
   .location_cont .both_cont .right .inner > ul > li .cont ol li {
-    background: url(/images/mobile/bg/bul_arrow.gif) no-repeat 3px 4px;
+    background: url(./images/mobile/bg/bul_arrow.gif) no-repeat 3px 4px;
     background-size: 7px auto;
   }
   .tab_wrap.type01.location {

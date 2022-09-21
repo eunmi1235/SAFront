@@ -9,7 +9,7 @@
     max-width: 730px;
     height: 150px;
     clear: both;
-    background-image: url(/images/krx_imgs/img01.png);
+    background-image: url(./images/krx_imgs/img01.png);
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: 97% 100%;
@@ -33,7 +33,7 @@
     display: inline-table;
     width: 15px;
     height: 15px;
-    background-image: url(/images/krx_imgs/img05.png);
+    background-image: url(./images/krx_imgs/img05.png);
     background-repeat: no-repeat;
 }
 

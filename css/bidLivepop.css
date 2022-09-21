@@ -541,7 +541,7 @@ h2.auction_ready {
 	-ms-transform: translate(-50%, -35%);     
 }  
 .video_icon {  
-	background: url(/images/bg/bg_img104.png) no-repeat 0 0; 
+	background: url(./images/bg/bg_img104.png) no-repeat 0 0; 
 	background-size: 50px auto;  
 	width: 50px;
 	height: 50px;
@@ -857,7 +857,7 @@ h2.auction_ready {
 .bidlive_wishbtn {
 	width: 15px; 
 	height: 15px; 
-	background: url(/images/bg/sprite_bul.png) no-repeat 0 0;
+	background: url(./images/bg/sprite_bul.png) no-repeat 0 0;
 	float: right;
 	background-size: 50px auto; 
 	background-position: 0 -64px;   
@@ -1067,7 +1067,7 @@ h2.auction_ready {
 	font-size: 13px;  
 }
 .bidnav_lotinfo span.navi_liveicon {     
-	background: url(/images/icon/liveicon.gif) no-repeat 0 0;
+	background: url(./images/icon/liveicon.gif) no-repeat 0 0;
 	width: 42px;    
 	height:15px;         
 	display: inline-block;    
@@ -1677,7 +1677,7 @@ gnb_menu_layer .web_menu_left {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 70px;
 	width: 70px;
 	height: 70px;
@@ -1944,7 +1944,7 @@ li.li_h2 {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 50px;
 	width: 50px;
 	height: 50px;
@@ -2258,7 +2258,7 @@ li.li_h2 {
 	margin: 0 auto;
 } 
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 50px;
 	width: 50px;
 	height: 50px;

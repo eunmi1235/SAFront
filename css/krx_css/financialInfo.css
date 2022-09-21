@@ -8,7 +8,7 @@
     max-width: 730px;
     height: 150px;
     clear: both;
-    background-image: url(/images/krx_imgs/img04.png);
+    background-image: url(./images/krx_imgs/img04.png);
     background-repeat: no-repeat;
     background-size: 110px;
     background-position: 97% 100%;
@@ -28,7 +28,7 @@
     display: inline-table;
     width: 15px;
     height: 15px;
-    background-image: url(/images/krx_imgs/img05.png);
+    background-image: url(./images/krx_imgs/img05.png);
     background-repeat: no-repeat;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .data-lists dl dt span{
-	background-image: url(/images/krx_imgs/img03.png);
+	background-image: url(./images/krx_imgs/img03.png);
     background-repeat: no-repeat;
     background-size: 12px;
     background-position: 0px 0px;

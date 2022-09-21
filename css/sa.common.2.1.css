@@ -51,7 +51,7 @@ span.edition_txt:before {
 }
 .imgcloseBtn {
 	display: inline-block;
-	background:url(/images/icon/close_black_24dp.svg) no-repeat center center;
+	background:url(./images/icon/close_black_24dp.svg) no-repeat center center;
 	width: 12px;
 	height: 12px;
 }
@@ -103,7 +103,7 @@ span.edition_txt:before {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 128px;
 	width: 128px;
 	height: 128px;
@@ -489,7 +489,7 @@ span.auction_txt_pale {
 	clear: both;
 }
 .grid_wish_btn {
-	background-image: url(/images/bg/sprite_bul.png);
+	background-image: url(./images/bg/sprite_bul.png);
 	background-position:0 -136px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -559,7 +559,7 @@ span.auction_txt_pale {
 }
 /*	웹용 메뉴 버튼 및 배열 수정 변경(em)  */
 .gnb_menu_layer .btn_gnbmenu_close.web_menu_close {
-	 background: url(/images/mobile/btn/sprite_btn_re.png) no-repeat 0 0;
+	 background: url(./images/mobile/btn/sprite_btn_re.png) no-repeat 0 0;
     background-size: 250px auto;
     background-position: -29px -81px;
 	position: relative;
@@ -648,7 +648,7 @@ span.auction_txt_pale {
     line-height: 20px;
     text-align: center;
     color: #009999;
-    background-image: url(/images/bg/sprite_bg.png);
+    background-image: url(./images/bg/sprite_bg.png);
     background-repeat: no-repeat;
     background-position: -229px -21px;
    	float: left;
@@ -1034,7 +1034,7 @@ h3.newsletter_headline {
 	padding: 7px 0;
 }
 .newsletter_back {
-	background: url(/images/bg/bg_arrow03.gif) no-repeat 0 0;
+	background: url(./images/bg/bg_arrow03.gif) no-repeat 0 0;
 	width: 13px;
 	height: 40px;
 	float: left;
@@ -1249,7 +1249,7 @@ table.sa_report_table tfoot.sa_report_notice {
 .artcon_listbox li .artcon_list_img {
 	width: 70px;
 	height: 70px;
-	background: url(/images/bg/bg_img19.gif) no-repeat left;
+	background: url(./images/bg/bg_img19.gif) no-repeat left;
 	vertical-align: middle;
 	display: inline-block;
 	padding-right: 5px;
@@ -1342,7 +1342,7 @@ table.artcon_table caption {
 	color: #bd2e40;
 }
 table.artcon_table td ul li {
-	background: url(/images/bg/bul_green.gif) no-repeat 0 10px;
+	background: url(./images/bg/bul_green.gif) no-repeat 0 10px;
 	background-size: 3px;
 	text-align: left;
 	padding-left: 10px;
@@ -1472,7 +1472,7 @@ table.artcon_table td ul li {
 .ps_inquiry_img {
 	width:12px;
 	height: 12px;
-	background: url(/images/bg/bul_excla.png) no-repeat;
+	background: url(./images/bg/bul_excla.png) no-repeat;
 	background-size: contain;
 	display: inline-block;
 	padding-right: 5px;
@@ -2371,7 +2371,7 @@ figure.effect-julia:hover p {
 	z-index:22;
 }
 .sub_slide .bx-wrapper .bx-prev {
-	background: url(/images/btn/sprite_btn.png) no-repeat 0 0;
+	background: url(./images/btn/sprite_btn.png) no-repeat 0 0;
 	width: 10px;
 	height: 11px;
 	left: 0;
@@ -2380,7 +2380,7 @@ figure.effect-julia:hover p {
 	height: 47px;
 }
 .sub_slide .bx-wrapper .bx-next {
-	background: url(/images/btn/sprite_btn.png) no-repeat 0 0;
+	background: url(./images/btn/sprite_btn.png) no-repeat 0 0;
 	width: 10px;
 	height: 11px;
 	background-position: -31px -122px;
@@ -2546,7 +2546,7 @@ figure.effect-julia:hover p {
 .livebid_page {
 	width: 100%;
 	height: 60px;
-	background: url(/images/mobile/img/img_intro.jpg);
+	background: url(./images/mobile/img/img_intro.jpg);
 	background-size: auto 136px;
 	background-position: right -23px;
 }
@@ -2644,7 +2644,7 @@ figure.effect-julia:hover p {
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 
-	background: url(/images/img/pwpopup_img.jpg) no-repeat -339px -9px;
+	background: url(./images/img/pwpopup_img.jpg) no-repeat -339px -9px;
 	background-size: cover;
 }
 .new_pwh1 {
@@ -2665,7 +2665,7 @@ figure.effect-julia:hover p {
 	width: 340px;
 }
 .new_pwh1 span {
-	background: url(/images/img/img_logo_re.png) no-repeat 0 0;
+	background: url(./images/img/img_logo_re.png) no-repeat 0 0;
 	width: 183px;
 	height: 33px;
 	display: block;
@@ -2840,7 +2840,7 @@ figure.effect-julia:hover p {
 .login_wrap .form .search a.login_btnbar {
 	margin-left: 20px;
     padding-left: 21px;
-    background: url(/images/bg/bul_bar04.gif) no-repeat 0 2px;
+    background: url(./images/bg/bul_bar04.gif) no-repeat 0 2px;
 }
 /* 로그인시 오류 멘트 */
 .login_wrap {
@@ -2861,11 +2861,11 @@ figure.effect-julia:hover p {
 	width: 100%;
 }
 #footer .sns_menu a.sns04 {
-	background: url(/images/btn/instart_icon.png) no-repeat -51px -19px;
+	background: url(./images/btn/instart_icon.png) no-repeat -51px -19px;
 	height: 13px;
 }
 #footer .sns_menu a.sns05 {
-	background: url(/images/btn/kakao_icon.png) no-repeat -50px -20px;
+	background: url(./images/btn/kakao_icon.png) no-repeat -50px -20px;
 	height: 12px;
 }
 /* 경매리스트 highlight */
@@ -3010,7 +3010,7 @@ figure.effect-julia:hover p {
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
-	background: url(/images/icon/checkbox.png) no-repeat 0px 2px;
+	background: url(./images/icon/checkbox.png) no-repeat 0px 2px;
 	width: 15px;
 	height: 24px;
 }
@@ -3179,7 +3179,7 @@ div.noListbox p{
 .btn_scroll_fixed button .ico{
 	width:19px;
 	height:14px;
-    background-image: url(/images/btn/sprite_btn_icon.gif);
+    background-image: url(./images/btn/sprite_btn_icon.gif);
     background-repeat: no-repeat;
 }
 
@@ -3254,7 +3254,7 @@ input[type="checkbox"].auctionagree_checkinput {
 input[type="checkbox"].check_inputbox+label,
 input[type="checkbox"].auctionagree_checkinput+label:before {
 	cursor: pointer;
-	background: url(/images/icon/checkbox.png) no-repeat -37px -22px;
+	background: url(./images/icon/checkbox.png) no-repeat -37px -22px;
 	width: 15px;
 	height: 15px;
 	display: inline-block;
@@ -3290,7 +3290,7 @@ input[type="checkbox"].auctionagree_checkinput:checked+label:before {
 	vertical-align: middle;
 }
 .agree_checkbox_img {
-	background: url(/images/icon/checkbox.png) no-repeat 0 -22px;
+	background: url(./images/icon/checkbox.png) no-repeat 0 -22px;
 	width: 15px;
 	height: 15px;
 	margin-right: 10px;
@@ -3425,7 +3425,7 @@ input[type="checkbox"].auctionagree_checkinput:checked+label:before {
 	content: "";
 	width: 7px;
 	height:7px;
-    background: url(/images/bg/bul_arrow.gif) no-repeat 0 0;
+    background: url(./images/bg/bul_arrow.gif) no-repeat 0 0;
     color: #666;
     display: inline-block;
     vertical-align: middle;
@@ -3682,10 +3682,10 @@ table.artcon_table {
 	overflow: hidden;
 }
 .zero_btn_interest {
-	background:url(/images/bg/sprite_bullet.png) no-repeat 0 -73px;
+	background:url(./images/bg/sprite_bullet.png) no-repeat 0 -73px;
 }
 .btn_interest.sele.zero_btn_interest_active {
-	background:url(/images/bg/sprite_bullet.png) no-repeat 0 -89px;
+	background:url(./images/bg/sprite_bullet.png) no-repeat 0 -89px;
 }
 .zero_namebtn_box {
 	width: 100%;
@@ -4073,7 +4073,7 @@ figure.effect-julia p{
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 100px;
 	width: 100px;
 	height: 100px;
@@ -4336,13 +4336,13 @@ gnb_menu_layer .web_menu_left {
 	text-align:left;
 }
 #footer .util_menu .sns_menu ul li a.sns04 {
-	background: url(/images/btn/instart_icon.png) no-repeat left center;
+	background: url(./images/btn/instart_icon.png) no-repeat left center;
 	background-size: 34px;
 	width: 24px;
 	height: 24px;
 }
 #footer .util_menu .sns_menu ul li a.sns05 {
-	background-image: url(/images/btn/kakao_icon.png);
+	background-image: url(./images/btn/kakao_icon.png);
 	background-size: 34px;
 	width: 24px;
 	height: 24px;
@@ -4672,7 +4672,7 @@ span.inteArtistName {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 70px;
 	width: 70px;
 	height: 70px;
@@ -4913,7 +4913,7 @@ li.li_h2 {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 50px;
 	width: 50px;
 	height: 50px;
@@ -5168,7 +5168,7 @@ li.li_h2 {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url(/images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 50px;
 	width: 50px;
 	height: 50px;

@@ -16,5 +16,5 @@
 .comment{border:#f4f4f5 1px solid; background:#f9f9fb; font-size:11px; padding:10px}
 
 /*0104추가*/
-.title{background:url(/images/payment/cashTop.gif); width:632px; height:73px;}
+.title{background:url(./images/payment/cashTop.gif); width:632px; height:73px;}
 .title td{color:#ffffff; font-size:24px; font-weight:bold}
