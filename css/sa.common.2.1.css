@@ -958,9 +958,11 @@ h2.auction_ready {
 }
 /* 뉴스레터 (em 2020.03.26) */
 .newsletter_gridwrap {
-	width: 25%;
-	float: left;
+	/* width: 25%; */
+	/* float: left; */
+	display: flex;  
 	animation: fadeIn 1s ease;
+	flex-wrap: wrap;
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -989,6 +991,7 @@ h2.auction_ready {
 	background: #fafafa;
 	box-sizing: border-box;
 	border: 1px solid #aaa;
+	width: calc(25% - 20px);  
 }
 .newsletter_gridbox:hover {
 	background: #fff;
@@ -3583,15 +3586,12 @@ span.inteArtistName {
 .bidding_btn02.green02 button {
 	padding: 7px 10px;
 }
-.newsletter_gridwrap {
-	width: 33.3%;
-}
 .newsletter_gridbox_img {
 	height: 285px;
 }
 .newsletter_gridbox {
-	margin: 0 15px;
 	margin-bottom: 40px;
+	width: calc(33.3333% - 20px);
 }
 .newsletter_gridbox_img img {
 	max-width: 285px;
@@ -3984,15 +3984,11 @@ figure.effect-julia p{
 .newsletter_gridbox {
 	background: #fafafa;
 	box-shadow: 0px 1px 3px 0;
-	margin: 0 20px;
 	margin-bottom: 50px;
-	border:none;
+	border:none; 
 }
 .newsletter_gridbox:hover {
 	background: #fafafa;
-}
-.newsletter_gridwrap {
-	width: 50%;
 }
 .newsletter_gridbox_infor {
 	background: #fafafa;
@@ -4614,6 +4610,10 @@ span.inteArtistName {
 	display: block;
 	font-size: 12px;
 }
+/* 뉴스레터 */
+.newsletter_gridbox {
+	width: calc(50% - 20px);
+}
 }
 @media all and (max-width: 750px){
 .academy_list {
@@ -4839,13 +4839,14 @@ li.li_h2 {
 }
 .newsletter_gridwrap {
 	width: 100%;
-	float: none;
+	display: block;
 }
 .newsletter_gridbox_img {
 	height: 290px;
 }
 .newsletter_gridbox {
-	margin: 0 70px;
+	width: 100%; 
+	margin: 0;
 	margin-bottom: 50px;
 }
 .artcon_box {

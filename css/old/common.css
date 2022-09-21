@@ -3701,6 +3701,7 @@ table .wrap_check.type03 > div {
   position: relative;
   height: auto; 
   margin: auto;
+  background-color: #ddd; 
 }
 .footerinner { /* footerinner 추가(가운데 정렬)*/
 	display: table; 

@@ -995,7 +995,7 @@ h2.auction_ready {
 	height: 20px;  
 	display: inline-block;
 	vertical-align: middle;    
-	background-position: -3px -36px;      
+	background-position: 3px -36px;      
 	background-size: 27px auto;
 	padding-left: 4px;  
 	
@@ -1006,7 +1006,7 @@ h2.auction_ready {
 	-o-transition: ease .3s;     
 }
 .white_down.on {   
-	transform: rotate(-180deg);     
+	transform: rotate(-180deg) translateX(-10px); 
 } 
 .bidlive_utilitybox ul li.utility_curren,
 .m_utility_curren {    
@@ -1543,7 +1543,7 @@ gnb_menu_layer .web_menu_left {
 	width: auto;
 	display: block;
 	border-bottom: 1px solid #ddd;  
-	padding: 10px 0; 
+	padding: 10px; 
 	margin-bottom: 10px;   
 }   
 .bidlive_titbox {
