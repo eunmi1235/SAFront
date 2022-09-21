@@ -31,10 +31,10 @@
                                        <li>     
                                        <span ng-if="offlineIng > 0"><a href="/currentAuction?sale_kind=offline_only&page=1&lang={{locale}}"><!--<a href="#">-->
                                            <spring:message code="label.auction.offlinecurrent" /> 메이저 경매
-                                           <img src="/images/icon/now_icon.png" /></a></span>   
+                                           <img src="./images/icon/now_icon.png" /></a></span>   
                                        </li>
                                        <li>
-                                       <span ng-if="offlineUpcomingIng > 0"><a href="/upcomingAuction?sale_kind=offline_only&lang={{locale}}">예정경매<spring:message code="label.auction.upcoming" /><img src="/images/icon/now_icon.png" /></a></span>
+                                       <span ng-if="offlineUpcomingIng > 0"><a href="/upcomingAuction?sale_kind=offline_only&lang={{locale}}">예정경매<spring:message code="label.auction.upcoming" /><img src="./images/icon/now_icon.png" /></a></span>
                                        <span id="offlineUpcomBtn"><spring:message code="label.auction.upcoming" /></span>
                                        </li>  
                                        <li><a href="/resultAuction?sale_kind=offline_only&page=1&lang={{locale}}">경매결과</a></li>
@@ -45,25 +45,25 @@
                                    <span class="sp_txt menu02"><span class="hidden">Online</span></span>
                                    <ul>  
                                        <li> 
-                                           <span ng-if="onlineIng > 0"><a href="/currentAuction?sale_kind=online_only&page=1&lang={{locale}}">진행경매<spring:message code="label.auction.current" /><img src="/images/icon/now_icon.png" /></a></span>
+                                           <span ng-if="onlineIng > 0"><a href="/currentAuction?sale_kind=online_only&page=1&lang={{locale}}">진행경매<spring:message code="label.auction.current" /><img src="./images/icon/now_icon.png" /></a></span>
                                            <span ng-if="onlineIng == 0 || onlineIng == null" id="onlineCurrBtn"><spring:message code="label.auction.current" /></span> 
                                        </li>      
                                        <li>
-                                           <span ng-if="onlineUpcomingIng > 0"><a href="/upcomingAuction?sale_kind=online_only&lang={{locale}}">예정경매<spring:message code="label.auction.upcoming" /><img src="/images/icon/now_icon.png" /></a></span> 
+                                           <span ng-if="onlineUpcomingIng > 0"><a href="/upcomingAuction?sale_kind=online_only&lang={{locale}}">예정경매<spring:message code="label.auction.upcoming" /><img src="./images/icon/now_icon.png" /></a></span> 
                                         </li>
                                        <!-- <li>
-                                           <a href="https://www.blacklot.com/" ng-if="locale=='ko'" target="_blank">블랙랏<img src="/images/icon/now_icon.png"/></a>  
+                                           <a href="https://www.blacklot.com/" ng-if="locale=='ko'" target="_blank">블랙랏<img src="./images/icon/now_icon.png"/></a>  
                                        </li>  -->
                                        <!-- <li>      
                                            <span ng-if="outsideIng > 0"><a href="/currentAuction?sale_outside_yn=Y&lang={{locale}}">
-                                               <span ng-if="locale=='ko'">블랙랏 제로베이스</span><img src="/images/icon/now_icon.png" /></a>
+                                               <span ng-if="locale=='ko'">블랙랏 제로베이스</span><img src="./images/icon/now_icon.png" /></a>
                                            </span>
                                        </li> -->
                                        <li><a href="/auctionGuide/page?view=onlinebidGuide&lang={{locale}}">위탁안내<spring:message code="label.howto.onbid" /></a></li><li>
-                                           <span ng-if="zerobaseIng > 0"><a href="/currentAuction?sale_kind=zerobase_only&page=1&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 경매</span><img src="/images/icon/now_icon.png" /></a></span>
+                                           <span ng-if="zerobaseIng > 0"><a href="/currentAuction?sale_kind=zerobase_only&page=1&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 경매</span><img src="./images/icon/now_icon.png" /></a></span>
                                        </li>
                                        <li>
-                                           <a href="https://www.seoulauction.com/zerobaseArtist?page=1&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 작가</span><img src="/images/icon/now_icon.png" /></a></span>
+                                           <a href="https://www.seoulauction.com/zerobaseArtist?page=1&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 작가</span><img src="./images/icon/now_icon.png" /></a></span>
                                        </li>
                                    </ul> 
                                </li>   
@@ -78,7 +78,7 @@
                                    <span class="sp_txt menu04"><span class="hidden">Service</span></span>   
                                    <ul>
                                        <li>
-                                           <a href="/service/page?view=academy&lang={{locale}}">아카데미<spring:message code="label.academy" /><img src="/images/icon/now_icon.png" /></a>
+                                           <a href="/service/page?view=academy&lang={{locale}}">아카데미<spring:message code="label.academy" /><img src="./images/icon/now_icon.png" /></a>
                                        </li>  
                                        <li><a href="/service/page?view=corporationArtwork&lang={{locale}}">아트컨설팅 & 기업마케팅<spring:message code="label.company.artwork" /></a></li>
                                        <li><a href="/service/page?view=rentExhibitionCenter&lang={{locale}}">전시장대관<spring:message code="label.space.rental" /></a></li>
@@ -97,7 +97,7 @@
                                        <li><a href="/about/page?view=pressList&lang={{locale}}">언론보도<spring:message code="label.press" /></a></li>
                                        <li><a href="/noticeList?lang={{locale}}">공지사항<spring:message code="label.notice" /></a></li> 
                                        <li ng-if="locale == 'ko'">   
-                                           <span ng-if="recruitMent > 0"><a href="/about/page?view=recruitList">채용공고<spring:message code="label.recruit" /><img src="/images/icon/now_icon.png" /></a></span> 
+                                           <span ng-if="recruitMent > 0"><a href="/about/page?view=recruitList">채용공고<spring:message code="label.recruit" /><img src="./images/icon/now_icon.png" /></a></span> 
                                        </li>   
                                        <li><a href="/about/page?view=location&lang={{locale}}">위치안내<spring:message code="label.seoulauction.location" /></a></li>
                                        <li><a href="/about/page?view=faq&lang={{locale}}">FAQ<spring:message code="label.faq" /></a></li> 
@@ -130,7 +130,7 @@
                    </ul>
                    <!-- 홍콩 리미티드 hidden 처리 
                    <ul>
-                       <li><a href="/about/page?view=saplus" ><img src="/images/img/saplus.jpg" alt="saplus" style="width:37px;"/>-><spring:message code="label.seoulauction.introhk" /></a></li>
+                       <li><a href="/about/page?view=saplus" ><img src="./images/img/saplus.jpg" alt="saplus" style="width:37px;"/>-><spring:message code="label.seoulauction.introhk" /></a></li>
                    </ul> -->
                </div>    
            </div>
@@ -217,7 +217,7 @@
                        <li>      
                            <span ng-if="offlineIng > 0"><a href="/currentAuction?sale_kind=offline_only&lang={{locale}}"><!--<a href="#">-->
                            메이저 경매<spring:message code="label.auction.offlinecurrent" />  
-                           <img src="/images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></span> 
+                           <img src="./images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></span> 
                            <!--<span id="offlineCurrBtn"><spring:message code="label.auction.current" /></span> -->      
                        </li>              
                        <li>
@@ -257,7 +257,7 @@
                  <li><a href="#">ONLINE</a> 
                    <ul>  
                          <li>  
-                           <span ng-if="onlineIng > 0"><a href="/currentAuction?sale_kind=online_only&lang={{locale}}">진행경매<spring:message code="label.auction.current" /><img src="/images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></span> 
+                           <span ng-if="onlineIng > 0"><a href="/currentAuction?sale_kind=online_only&lang={{locale}}">진행경매<spring:message code="label.auction.current" /><img src="./images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></span> 
                        </li>         
                        <li>
                            <span ng-if="onlineUpcomingIng == 0 || onlineUpcomingIng == null" id="M_Only_OnlineUpcomEnd">예정경매<spring:message code="label.auction.upcoming" /></span>  
@@ -266,7 +266,7 @@
                        <li><a href="/auctionGuide/page?view=onlinebidGuide&lang={{locale}}">온라인경매안내<spring:message code="label.howto.onbid" /></a></li>
                        <li class="zero_bar" style="cursor: none;"></li>
                        <li> 
-                           <span ng-if="zerobaseIng > 0"><a href="/currentAuction?sale_kind=zerobase_only&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 경매</span><img src="/images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></span> 
+                           <span ng-if="zerobaseIng > 0"><a href="/currentAuction?sale_kind=zerobase_only&lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 경매</span><img src="./images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></span> 
                        </li> 
                        <li> 
                            <a href="https://www.seoulauction.com/zerobaseArtist?lang={{locale}}"><span ng-if="locale=='ko'">제로베이스 작가</span></a>  
@@ -275,7 +275,7 @@
                  </li> 
                  <li><a href="#">PRIVATE SALE</a>
                    <ul>     
-                       <li><a href="/currentPrivate?lang={{locale}}"><spring:message code="label.ps.privatesale" />프라이빗 세일<img src="/images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></li>  
+                       <li><a href="/currentPrivate?lang={{locale}}"><spring:message code="label.ps.privatesale" />프라이빗 세일<img src="./images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;"/></a></li>  
                        <li><a href="/ps/page?view=priGuide&lang={{locale}}">PS 가이드<spring:message code="label.ps.privateguide" /></li></a>
                    </ul>
                  </li>   
@@ -283,7 +283,7 @@
                    <ul> 
                        <!-- <li><a href="/search"><spring:message code="label.artwork.search" /></a></li>
                        <li><a href="/service/page?view=displayPlan"><spring:message code="label.exhibition.curation" /></a></li>-->
-                       <li><a href="/service/page?view=academy&lang={{locale}}">아카데미<spring:message code="label.academy" /><span ng-if="academyIng > 0"><img src="/images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;" /></span></a> 
+                       <li><a href="/service/page?view=academy&lang={{locale}}">아카데미<spring:message code="label.academy" /><span ng-if="academyIng > 0"><img src="./images/icon/now_icon.png" style="vertical-align: text-bottom; margin-left: 2px;" /></span></a> 
                            <ul class="sub_menu_tit" style="border-bottom:1px solid #333;">           
                                <li>       
                                    <a href="/service/page?view=academyArtculture&lang={{locale}}">아트컬쳐<spring:message code="label.academy.artculture" /></a> 
@@ -352,7 +352,7 @@
                        <li><a href="/about/page?view=pressList&lang={{locale}}">언론보도<spring:message code="label.press" /></a></li>
                        <li><a href="/noticeList?lang={{locale}}">공지사항<spring:message code="label.notice" /></a></li> 
                        <li ng-if="locale == 'ko'">   
-                           <span ng-if="recruitMent > 0"><a href="/about/page?view=recruitList">채용공고<spring:message code="label.recruit" /><img src="/images/icon/now_icon.png" /></a></span> 
+                           <span ng-if="recruitMent > 0"><a href="/about/page?view=recruitList">채용공고<spring:message code="label.recruit" /><img src="./images/icon/now_icon.png" /></a></span> 
                        </li>  
                        <li> 
                            <a href="/about/page?view=location&lang={{locale}}">위치안내<spring:message code="label.seoulauction.location" /></a>
@@ -452,4 +452,4 @@
     </script>  
 
     <script src="./js/topmenu02.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/js/old/ui.js"></script> 
+    <script type="text/javascript" src="./js/old/ui.js"></script> 
