@@ -296,7 +296,7 @@
 							<div class="info"> 
 								<!-- 1:1문의 --> 
 								<span class="btn_style01 xlarge green02 btn_bid">
-									<button type="button" onClick="location.href='/customer/inquiryForm'">
+									<button type="button" onClick="InquiryForm()">
                                         <spring:message code="label.go.inquery" />문의하기
                                     </button> 
 								</span>
@@ -306,7 +306,7 @@
 										<button type="button"> 
 											<spring:message code="label.go.print.now" />출력하기
 										</button>
-									</span>
+									</span> 
 								</a> 	
                              </div>                             
 						</div> 
@@ -360,5 +360,10 @@
 <!-- //#wrap -->
 <div class="footer_sub"></div>
 <div class="footer_wrap"></div>
+<script type="text/javascript">
+	function InquiryForm(){
+		window.location.href ="./inquiryWrite.html";
+	}
+</script>
 </body>
 </html>

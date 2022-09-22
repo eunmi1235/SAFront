@@ -320,7 +320,11 @@
 			
 					<div class="bidlive_video bidlive_videobox">    
 						<div>     
-							<video id="llnw-rts-subscriber" width="640" height="480" autoplay controls playsinline muted></video>  
+							<!-- <video id="llnw-rts-subscriber" width="640" height="480" autoplay controls playsinline muted title="실시간 경매 온라인 응찰"></video>   -->
+							<!-- <video controls width="700" height="350">
+								<source src="https://www.youtube.com/embed/aQz-SCg7yhY?autoplay=1&mute=1" autoplay controls playsinline muted title="실시간 경매 온라인 응찰">
+							</video> -->
+							<iframe width="700" height="350" src="https://www.youtube.com/embed/aQz-SCg7yhY?autoplay=1&mute=1" title="Sergio Aranda: Artist's Studio in Paris / Visit of my workshop / Contemporary Visual Artist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>     
 					</div><!-- //video -->   
 				
@@ -614,18 +618,16 @@
 										</p> 
 							  		</button>    
 							  	</span>   
-							  	<span ng-if="custInfo.CUST_NO > 0 && lot.LIVE_CLOSE_YN!='N' && offBidList.length > 0 && custInfo.PADD_NO > 0">
+							  	<!-- <span ng-if="custInfo.CUST_NO > 0 && lot.LIVE_CLOSE_YN!='N' && offBidList.length > 0 && custInfo.PADD_NO > 0">
 									<button type="button" ng-disabled="lot.IS_WIN == 'Y'">   
-						  				<span ng-if="locale=='ko'">응찰마감</span> 	 
-						  				<span ng-if="locale!='ko'">Bid Closed</span>  
+						  				<span ng-if="locale=='ko'">응찰마감</span> 	  
 							  		</button> 
 							  	</span> 
 							  	<span ng-if="custInfo.CUST_NO > 0 && lot.LIVE_CLOSE_YN!='N' && offBidList.length == 0 && custInfo.PADD_NO > 0">
 									<button type="button">  
 						  				<span ng-if="locale=='ko'">응찰준비</span> 	
-						  				<span ng-if="locale!='ko'">Bid Ready</span>
 							  		</button> 
-							  	</span>
+							  	</span> -->
 								<!-- 비로그인 및 사전신청 하지 않는 경우  -->
 							  	<!-- <span ng-if="!custInfo.CUST_NO">
 									<button type="button" onClick="location.href='/login'">
@@ -867,7 +869,7 @@
 				
 				<div class="btn_wrap" style="margin-bottom: 10px; clear:both;">      
 					<span class="btn_style01 gray mid btn_pop_close" id="cancelBtn">
-						<button type="button"><spring:message code="label.close" />닫기</button>
+						<button type="button" onclick="windowClose()"><spring:message code="label.close" />닫기</button>
 					</span>   
 				</div>   
 			</div> <!-- //bidlive_resizeFull -->     
@@ -1000,4 +1002,9 @@
 </script>   
 
 <script src="./js/simple.js?ver=1.0.0"></script>
+<script type="text/javascript">
+	function windowClose(){
+		window.close(); 
+	}
+</script>
 </html>
