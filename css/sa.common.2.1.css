@@ -2868,6 +2868,15 @@ figure.effect-julia:hover p {
 	background: url(./images/btn/kakao_icon.png) no-repeat -50px -20px;
 	height: 12px;
 }
+.cont_mask_txtbox {
+	margin: 40px 0;
+}
+.ConfirmBox{
+	display: none;
+}
+.ConfirmBox.on{
+	display: block;
+}
 /* 경매리스트 highlight */
 .hightlightwrap {
 	margin: 0 auto;
@@ -4130,6 +4139,12 @@ figure.effect-julia p{
 }
 }
 @media all and (max-width: 768px){
+.inquirytable {
+	height: auto; 
+}
+.inquirytable .txt {
+	padding: 0;
+}
 .my_name {
 	font-size: 25px;
 }

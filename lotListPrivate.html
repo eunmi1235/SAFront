@@ -156,30 +156,76 @@
                                 	<div class="wraph_bor private_wraph_bor">         
 										<div class="img"> 
 											<div class="img_w">
-												<a ng-href="javascript:void(0);">  
+												<a href="./lotDetailPrivate.html">  
 													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
 												</a>
 											</div>
 										</div><!-- //img -->      
 										<div class="info"> 
-											<a ng-href="javascript:void(0);">
+											<a href="./lotDetailPrivate.html">
 												<div class="lot_wish"> 
 													<div class="lotnum auction_lotnum"> 
-														<strong title="{{asList.AS_NO}}">1</strong>  
+														<strong title="1">1</strong>  
 													</div>
 												</div>  
 												<div class="workartist auction_workartist">
-													<span title="{{asList.ARTIST_NAME_BLOB_KO}}">이우환</span> 
-													<span class="txt_pale auction_txt_pale" title="{{asList.BORN_YEAR}}">1970</span> 
+													<span title="이우환">이우환</span> 
+													<span class="txt_pale auction_txt_pale" title="1970">1970</span> 
 												</div>
 												<div class="worktitle auction_worktitle">
-													<span title="{{asList.TITLE_BLOB_KO}}">무제</span>
+													<span title="무제">무제</span>
 												</div>	 		 
 												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
-													<span style="font-size:14px" class="ps_after_span" title="{{asList.MAKE_YEAR_BLOB}}">1990</span>  
+													<span style="font-size:14px" class="ps_after_span" title="1990">1990</span>
+													<span style="font-size:14px" title="Material">Material</span>
 													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
-														<span ng-bind="size | size_text_cm" title="{{size | size_text_cm}}">20 * 20</span>     
-														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="{{lot.EDITION}}">edition text</span></span>    
+														<span ng-bind="size | size_text_cm" title="20 * 20cm">20 * 20cm</span>     
+														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="edition text">edition text</span></span>    
+													</p>   
+												</div> 
+												<div class="ect">
+													<div class="btn"> 	
+														<!-- 1:1문의 또는 서면/전화 방식 결정 후 진행 필요함.--> 
+														<span class="btn_style01 xlarge green02 full">
+															<button type="button" onclick="location.href='/customer/inquiryForm'">문의<spring:message code="label.go.inquery" /></button>
+														</span>
+													</div>
+												</div><!--//ect-->
+											</a> 
+										</div><!-- //info --> 
+									</div><!-- //wraph_bor -->
+								</div> 
+							</li>  
+							<li>    
+								<div class="wraph">
+                                	<div class="wraph_bor private_wraph_bor">         
+										<div class="img"> 
+											<div class="img_w">
+												<a ng-href="./lotDetailPrivate.html">  
+													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
+												</a>
+											</div>
+										</div><!-- //img -->      
+										<div class="info"> 
+											<a ng-href="./lotDetailPrivate.html">
+												<div class="lot_wish"> 
+													<div class="lotnum auction_lotnum"> 
+														<strong title="1">1</strong>  
+													</div>
+												</div>  
+												<div class="workartist auction_workartist">
+													<span title="이우환">이우환</span> 
+													<span class="txt_pale auction_txt_pale" title="1970">1970</span> 
+												</div>
+												<div class="worktitle auction_worktitle">
+													<span title="무제">무제</span>
+												</div>	 		 
+												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
+													<span style="font-size:14px" class="ps_after_span" title="1990">1990</span>  
+													<span style="font-size:14px" title="Material">Material</span>
+													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
+														<span ng-bind="size | size_text_cm" title="20 * 20cm">20 * 20cm</span>     
+														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="edition text">edition text</span></span>    
 													</p>   
 												</div> 
 												<div class="ect">
@@ -200,30 +246,31 @@
                                 	<div class="wraph_bor private_wraph_bor">         
 										<div class="img"> 
 											<div class="img_w">
-												<a ng-href="javascript:void(0);">  
+												<a ng-href="./lotDetailPrivate.html">  
 													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
 												</a>
 											</div>
 										</div><!-- //img -->      
 										<div class="info"> 
-											<a ng-href="javascript:void(0);">
+											<a ng-href="./lotDetailPrivate.html">
 												<div class="lot_wish"> 
 													<div class="lotnum auction_lotnum"> 
-														<strong title="{{asList.AS_NO}}">1</strong>  
+														<strong title="1">1</strong>  
 													</div>
 												</div>  
 												<div class="workartist auction_workartist">
-													<span title="{{asList.ARTIST_NAME_BLOB_KO}}">이우환</span> 
-													<span class="txt_pale auction_txt_pale" title="{{asList.BORN_YEAR}}">1970</span> 
+													<span title="이우환">이우환</span> 
+													<span class="txt_pale auction_txt_pale" title="1970">1970</span> 
 												</div>
 												<div class="worktitle auction_worktitle">
-													<span title="{{asList.TITLE_BLOB_KO}}">무제</span>
+													<span title="무제">무제</span>
 												</div>	 		 
 												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
-													<span style="font-size:14px" class="ps_after_span" title="{{asList.MAKE_YEAR_BLOB}}">1990</span>  
+													<span style="font-size:14px" class="ps_after_span" title="1990">1990</span>  
+													<span style="font-size:14px" title="Material">Material</span>
 													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
-														<span ng-bind="size | size_text_cm" title="{{size | size_text_cm}}">20 * 20</span>     
-														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="{{lot.EDITION}}">edition text</span></span>    
+														<span ng-bind="size | size_text_cm" title="20 * 20cm">20 * 20cm</span>     
+														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="edition text">edition text</span></span>    
 													</p>   
 												</div> 
 												<div class="ect">
@@ -244,30 +291,31 @@
                                 	<div class="wraph_bor private_wraph_bor">         
 										<div class="img"> 
 											<div class="img_w">
-												<a ng-href="javascript:void(0);">  
+												<a ng-href="./lotDetailPrivate.html">  
 													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
 												</a>
 											</div>
 										</div><!-- //img -->      
 										<div class="info"> 
-											<a ng-href="javascript:void(0);">
+											<a ng-href="./lotDetailPrivate.html">
 												<div class="lot_wish"> 
 													<div class="lotnum auction_lotnum"> 
-														<strong title="{{asList.AS_NO}}">1</strong>  
+														<strong title="1">1</strong>  
 													</div>
 												</div>  
 												<div class="workartist auction_workartist">
-													<span title="{{asList.ARTIST_NAME_BLOB_KO}}">이우환</span> 
-													<span class="txt_pale auction_txt_pale" title="{{asList.BORN_YEAR}}">1970</span> 
+													<span title="이우환">이우환</span> 
+													<span class="txt_pale auction_txt_pale" title="1970">1970</span> 
 												</div>
 												<div class="worktitle auction_worktitle">
-													<span title="{{asList.TITLE_BLOB_KO}}">무제</span>
+													<span title="무제">무제</span>
 												</div>	 		 
 												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
-													<span style="font-size:14px" class="ps_after_span" title="{{asList.MAKE_YEAR_BLOB}}">1990</span>  
+													<span style="font-size:14px" class="ps_after_span" title="1990">1990</span>  
+													<span style="font-size:14px" title="Material">Material</span>
 													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
-														<span ng-bind="size | size_text_cm" title="{{size | size_text_cm}}">20 * 20</span>     
-														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="{{lot.EDITION}}">edition text</span></span>    
+														<span ng-bind="size | size_text_cm" title="20 * 20cm">20 * 20cm</span>     
+														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="edition text">edition text</span></span>    
 													</p>   
 												</div> 
 												<div class="ect">
@@ -288,30 +336,31 @@
                                 	<div class="wraph_bor private_wraph_bor">         
 										<div class="img"> 
 											<div class="img_w">
-												<a ng-href="javascript:void(0);">  
+												<a ng-href="./lotDetailPrivate.html">  
 													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
 												</a>
 											</div>
 										</div><!-- //img -->      
 										<div class="info"> 
-											<a ng-href="javascript:void(0);">
+											<a ng-href="./lotDetailPrivate.html">
 												<div class="lot_wish"> 
 													<div class="lotnum auction_lotnum"> 
-														<strong title="{{asList.AS_NO}}">1</strong>  
+														<strong title="1">1</strong>  
 													</div>
 												</div>  
 												<div class="workartist auction_workartist">
-													<span title="{{asList.ARTIST_NAME_BLOB_KO}}">이우환</span> 
-													<span class="txt_pale auction_txt_pale" title="{{asList.BORN_YEAR}}">1970</span> 
+													<span title="이우환">이우환</span> 
+													<span class="txt_pale auction_txt_pale" title="1970">1970</span> 
 												</div>
 												<div class="worktitle auction_worktitle">
-													<span title="{{asList.TITLE_BLOB_KO}}">무제</span>
+													<span title="무제">무제</span>
 												</div>	 		 
 												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
-													<span style="font-size:14px" class="ps_after_span" title="{{asList.MAKE_YEAR_BLOB}}">1990</span>  
+													<span style="font-size:14px" class="ps_after_span" title="1990">1990</span>  
+													<span style="font-size:14px" title="Material">Material</span>
 													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
-														<span ng-bind="size | size_text_cm" title="{{size | size_text_cm}}">20 * 20</span>     
-														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="{{lot.EDITION}}">edition text</span></span>    
+														<span ng-bind="size | size_text_cm" title="20 * 20cm">20 * 20cm</span>     
+														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="edition text">edition text</span></span>    
 													</p>   
 												</div> 
 												<div class="ect">
@@ -332,75 +381,32 @@
                                 	<div class="wraph_bor private_wraph_bor">         
 										<div class="img"> 
 											<div class="img_w">
-												<a ng-href="javascript:void(0);">  
+												<a ng-href="./lotDetailPrivate.html">  
 													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
 												</a>
 											</div>
 										</div><!-- //img -->      
 										<div class="info"> 
-											<a ng-href="javascript:void(0);">
+											<a ng-href="./lotDetailPrivate.html">
 												<div class="lot_wish"> 
 													<div class="lotnum auction_lotnum"> 
-														<strong title="{{asList.AS_NO}}">1</strong>  
+														<strong title="1">1</strong>  
 													</div>
 												</div>  
 												<div class="workartist auction_workartist">
-													<span title="{{asList.ARTIST_NAME_BLOB_KO}}">이우환</span> 
-													<span class="txt_pale auction_txt_pale" title="{{asList.BORN_YEAR}}">1970</span> 
+													<span title="이우환">이우환</span> 
+													<span class="txt_pale auction_txt_pale" title="1970">1970</span> 
 												</div>
 												<div class="worktitle auction_worktitle">
-													<span title="{{asList.TITLE_BLOB_KO}}">무제</span>
+													<span title="무제">무제</span>
 												</div>	 		 
 												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
-													<span style="font-size:14px" class="ps_after_span" title="{{asList.MAKE_YEAR_BLOB}}">1990</span>  
+													<span style="font-size:14px" class="ps_after_span" title="1990">1990</span> 
+													<span style="font-size:14px" title="Material">Material</span>
 													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
-														<span ng-bind="size | size_text_cm" title="{{size | size_text_cm}}">20 * 20</span>     
-														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="{{lot.EDITION}}">edition text</span></span>    
-													</p>   
-												</div> 
-												<div class="ect">
-													<div class="btn"> 	
-														<!-- 1:1문의 또는 서면/전화 방식 결정 후 진행 필요함.--> 
-														<span class="btn_style01 xlarge green02 full"> 
-															<button type="button" onclick="location.href='/customer/inquiryForm'">문의<spring:message code="label.go.inquery" /></button>
-														</span>    
-													</div>
-												</div><!--//ect-->
-											</a> 
-										</div><!-- //info --> 
-									</div><!-- //wraph_bor -->
-								</div> 
-							</li>  
-							<li>    
-								<div class="wraph">
-                                	<div class="wraph_bor private_wraph_bor">         
-										<div class="img"> 
-											<div class="img_w">
-												<a ng-href="javascript:void(0);">  
-													<img src="./images/img/img_history09.jpg" style="max-width: 100%; max-height: 300px;">
-												</a>
-											</div>
-										</div><!-- //img -->      
-										<div class="info"> 
-											<a ng-href="javascript:void(0);">
-												<div class="lot_wish"> 
-													<div class="lotnum auction_lotnum"> 
-														<strong title="{{asList.AS_NO}}">1</strong>  
-													</div>
-												</div>  
-												<div class="workartist auction_workartist">
-													<span title="{{asList.ARTIST_NAME_BLOB_KO}}">이우환</span> 
-													<span class="txt_pale auction_txt_pale" title="{{asList.BORN_YEAR}}">1970</span> 
-												</div>
-												<div class="worktitle auction_worktitle">
-													<span title="{{asList.TITLE_BLOB_KO}}">무제</span>
-												</div>	 		 
-												<div class="workmaterial workmaterial02" style="line-height: 1.5;">    
-													<span style="font-size:14px" class="ps_after_span" title="{{asList.MAKE_YEAR_BLOB}}">1990</span>  
-													<p class="edition_txt_p"> <!-- 첫번째 사이즈만 보여준다(YDH.2020.02.01) -->
-														<span ng-bind="size | size_text_cm" title="{{size | size_text_cm}}">20 * 20</span>     
-														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="{{lot.EDITION}}">edition text</span></span>    
-													</p>   
+														<span ng-bind="size | size_text_cm" title="20 * 20cm">20 * 20cm</span>     
+														<span class="edition_txt" title="작품 타이틀"><span ng-bind="lot.EDITION" title="edition text">edition text</span></span>    
+													</p>
 												</div> 
 												<div class="ect">
 													<div class="btn"> 	

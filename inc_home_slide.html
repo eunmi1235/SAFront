@@ -44,25 +44,34 @@
 		</div><!-- thum -->
 		</div><!-- rollbox -->
 		<div class="cont_mask">
-			<div class="">  
+			<div class="cont_mask_txtbox">  
 				<div class="cont_tit txt_han" style="cursor: default; margin-top: 300px;"> 
 					<p>제 101회 서울옥션 미술품경매</p> <!-- 슬라이드 제목 -->
 				</div>
 				<div class="cont_text" style="margin-top: -100px;cursor:default"> <!-- 슬라이드 내용 -->
 					<dl>
-					 <dt ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe">시간: (Tue) 22 Mar, 2022 4:00 PM KST</dt> <!-- 단락1 제목 -->
-					 <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe">전시장소 : 서울옥션 강남센터</dd> <!-- 단락1 내용 -->
+					 <dt ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe">
+						[Auction]
+					 </dt> <!-- 단락1 제목 -->
+					 <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe">2019. 12. 01 (화) 4PM<br>
+						서울옥션 강남센터 6F
+					</dd> <!-- 단락1 내용 -->
 				 </dl>
 					<dl ng-if="slide.SUB_TEXT_TITLE_JSON[locale] != null || slide.SUB_TEXT_JSON[locale] != null" >
-						<dt ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe"></dt> <!-- 단락2 제목 -->
-						<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe"></dd> <!-- 단락2 내용 -->
+						<dt ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe">[Preview]</dt> <!-- 단락2 제목 -->
+						<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe">
+							2022. 9. 14 (수) ~ 9. 18 (일)<br>
+							강남센터 B4F, 6F 10:00 AM - 7:00 PM<br>
+							2022. 9. 19 (월) ~ 9. 21 (화)<br>
+							강남센터 5F, 6F 10:00 AM - 7:00 PM
+						</dd> <!-- 단락2 내용 -->
 					</dl> 
 				</div>
 				<!-- button -->
 					<!-- //green orange yellow sky deepblue deeppink deepred  -->
 				<a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">작품보기</a>
-				<a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">도록보기</a>
-				<a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">전시장보기</a>
+				<a href="javascript:void(0);" target="_blank" class="btn_main_more yellow" ng-class="green">도록보기</a>
+				<a href="./bidLive_memberNew.html" target="_blank" class="btn_main_more green" ng-class="green">실시간응찰</a>
 			</div><!-- sec3_cont -->
 		</div> <!-- cont_mask -->
 	</div><!-- sec -->
@@ -96,25 +105,34 @@
 			</div><!-- thum -->
 		</div><!-- rollbox -->
     	<div class="cont_mask">
-	   		<div class="">  
-	   			<div class="cont_tit txt_han" style="cursor: default; margin-top: 300px;"> 
-	                <p>제 101회 서울옥션 미술품경매</p> <!-- 슬라이드 제목 -->
-	   			</div>
-	   			<div class="cont_text" style="margin-top: -100px;cursor:default"> <!-- 슬라이드 내용 -->
+	   		<div class="cont_mask_txtbox">  
+				<div class="cont_tit txt_han" style="cursor: default; margin-top: 300px;"> 
+					<p>제 101회 서울옥션 미술품경매</p> <!-- 슬라이드 제목 -->
+				</div>
+				<div class="cont_text" style="margin-top: -100px;cursor:default"> <!-- 슬라이드 내용 -->
 					<dl>
-					 <dt ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe">시간: (Tue) 22 Mar, 2022 4:00 PM KST</dt> <!-- 단락1 제목 -->
-					 <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe">전시장소 : 서울옥션 강남센터</dd> <!-- 단락1 내용 -->
+					 <dt ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe">
+						[Auction]
+					 </dt> <!-- 단락1 제목 -->
+					 <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe">2019. 12. 01 (화) 4PM<br>
+						서울옥션 강남센터 6F
+					</dd> <!-- 단락1 내용 -->
 				 </dl>
 					<dl ng-if="slide.SUB_TEXT_TITLE_JSON[locale] != null || slide.SUB_TEXT_JSON[locale] != null" >
-						<dt ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe"></dt> <!-- 단락2 제목 -->
-						<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe"></dd> <!-- 단락2 내용 -->
+						<dt ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe">[Preview]</dt> <!-- 단락2 제목 -->
+						<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe">
+							2022. 9. 14 (수) ~ 9. 18 (일)<br>
+							강남센터 B4F, 6F 10:00 AM - 7:00 PM<br>
+							2022. 9. 19 (월) ~ 9. 21 (화)<br>
+							강남센터 5F, 6F 10:00 AM - 7:00 PM
+						</dd> <!-- 단락2 내용 -->
 					</dl> 
-	            </div>
+				</div>
 	   			<!-- button -->
 	   			  <!-- //green orange yellow sky deepblue deeppink deepred  -->
 	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">작품보기</a>
-	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">도록보기</a>
-	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">전시장보기</a>
+	              <a href="javascript:void(0);" target="_blank" class="btn_main_more yellow" ng-class="green">도록보기</a>
+	              <a href="javascript:void(0);" target="_blank" class="btn_main_more yellow" ng-class="green">전시장보기</a>
 	   		</div><!-- sec3_cont -->
    		</div> <!-- cont_mask -->
     </div><!-- sec -->
@@ -149,25 +167,34 @@
 			</div><!-- thum -->
 		</div><!-- rollbox -->
     	<div class="cont_mask">
-	   		<div class="">  
-	   			<div class="cont_tit txt_han" style="cursor: default; margin-top: 300px;"> 
-	                <p>제 101회 서울옥션 미술품경매</p> <!-- 슬라이드 제목 -->
-	   			</div>
-	   			<div class="cont_text" style="margin-top: -100px;cursor:default"> <!-- 슬라이드 내용 -->
+	   		<div class="cont_mask_txtbox">  
+				<div class="cont_tit txt_han" style="cursor: default; margin-top: 300px;"> 
+					<p>제 101회 서울옥션 미술품경매</p> <!-- 슬라이드 제목 -->
+				</div>
+				<div class="cont_text" style="margin-top: -100px;cursor:default"> <!-- 슬라이드 내용 -->
 					<dl>
-					 <dt ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe">시간: (Tue) 22 Mar, 2022 4:00 PM KST</dt> <!-- 단락1 제목 -->
-					 <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe">전시장소 : 서울옥션 강남센터</dd> <!-- 단락1 내용 -->
+					 <dt ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe">
+						[Auction]
+					 </dt> <!-- 단락1 제목 -->
+					 <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe">2019. 12. 01 (화) 4PM<br>
+						서울옥션 강남센터 6F
+					</dd> <!-- 단락1 내용 -->
 				 </dl>
 					<dl ng-if="slide.SUB_TEXT_TITLE_JSON[locale] != null || slide.SUB_TEXT_JSON[locale] != null" >
-						<dt ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe"></dt> <!-- 단락2 제목 -->
-						<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe"></dd> <!-- 단락2 내용 -->
+						<dt ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe">[Preview]</dt> <!-- 단락2 제목 -->
+						<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe">
+							2022. 9. 14 (수) ~ 9. 18 (일)<br>
+							강남센터 B4F, 6F 10:00 AM - 7:00 PM<br>
+							2022. 9. 19 (월) ~ 9. 21 (화)<br>
+							강남센터 5F, 6F 10:00 AM - 7:00 PM
+						</dd> <!-- 단락2 내용 -->
 					</dl> 
-	            </div>
+				</div>  
 	   			<!-- button -->
 	   			  <!-- //green orange yellow sky deepblue deeppink deepred  -->
 	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">작품보기</a>
-	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">도록보기</a>
-	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">전시장보기</a>
+	              <a href="javascript:void(0);" target="_blank" class="btn_main_more yellow" ng-class="green">도록보기</a>
+	              <a href="./bidLive_memberNew.html" target="_blank" class="btn_main_more green" ng-class="green">실시간응찰</a>
 	   		</div><!-- sec3_cont -->
    		</div> <!-- cont_mask -->
     </div><!-- sec --> 

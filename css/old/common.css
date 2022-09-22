@@ -195,6 +195,10 @@ input[type="checkbox"] {
   margin: 0;
   vertical-align: middle;
 }
+input:focus-visible,
+select:focus-visible {
+  outline: none;
+}
 button {
   padding: 0;
   border: 0;
@@ -2926,6 +2930,8 @@ table .wrap_check.type03 > div {
 }
 .fl_wrap select {
 	height: 32px; 
+  padding: 0 5px; 
+  padding-right:25px; 
 }
 .fl_wrap .sbHolder,
 .fl_wrap .sbSelector,
