@@ -71,7 +71,7 @@ img {
 .fixed-table-wrap { 
 	overflow-x: hidden;    
 	overflow-y: scroll; 
-	height: 128px;                   
+	height: 171px;                   
 } 
 table.fixed-table { 
 	width: 100%;
@@ -541,7 +541,7 @@ h2.auction_ready {
 	-ms-transform: translate(-50%, -35%);     
 }  
 .video_icon {  
-	background: url("../images/bg/bg_img104.png") no-repeat 0 0; 
+	background: url(./images/bg/bg_img104.png) no-repeat 0 0; 
 	background-size: 50px auto;  
 	width: 50px;
 	height: 50px;
@@ -762,6 +762,15 @@ h2.auction_ready {
 	overflow: hidden;
     text-align: center; 
     padding: 0;  
+	height:0;
+	padding-top: 25em; 
+}
+.livevideo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; 
+	left: 0; 
 }
 .bidlive_tapcation {
 	line-height: 145px;      
@@ -857,7 +866,7 @@ h2.auction_ready {
 .bidlive_wishbtn {
 	width: 15px; 
 	height: 15px; 
-	background: url("../images/bg/sprite_bul.png") no-repeat 0 0;
+	background: url(./images/bg/sprite_bul.png) no-repeat 0 0;
 	float: right;
 	background-size: 50px auto; 
 	background-position: 0 -64px;   
@@ -990,7 +999,7 @@ h2.auction_ready {
 }
 
 .white_down {  
-	background: url("/images/btn/white_updown.png"") no-repeat 0 0;   
+	background: url("/images/btn/white_updown.png") no-repeat 0 0;   
 	width: 20px; 
 	height: 20px;  
 	display: inline-block;
@@ -1067,7 +1076,7 @@ h2.auction_ready {
 	font-size: 13px;  
 }
 .bidnav_lotinfo span.navi_liveicon {     
-	background: url("../images/icon/liveicon.gif") no-repeat 0 0;
+	background: url(./images/icon/liveicon.gif) no-repeat 0 0;
 	width: 42px;    
 	height:15px;         
 	display: inline-block;    
@@ -1078,7 +1087,7 @@ h2.auction_ready {
 .posi_ab{
 	position:absolute;
 	top:20%;  
-	font-size:50px;    
+	font-size:50px;   
 	font-weight:900;         
 } 
 .PaddNo_width {   
@@ -1555,6 +1564,9 @@ gnb_menu_layer .web_menu_left {
 }
 } 
 @media all and (max-width:767px){
+.bidlive_videobox {
+	padding-top: 15em;
+}
 .culture_grid_box {
     width: calc(100% / 3 - 25px);
     width: -webkit-calc(100% / 3 - 25px);
@@ -1677,7 +1689,7 @@ gnb_menu_layer .web_menu_left {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url("../images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 70px;
 	width: 70px;
 	height: 70px;
@@ -1944,7 +1956,7 @@ li.li_h2 {
 	margin: 0 auto;
 }
 .my_bg {
-	background-image: url("../images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 50px;
 	width: 50px;
 	height: 50px;
@@ -2258,7 +2270,7 @@ li.li_h2 {
 	margin: 0 auto;
 } 
 .my_bg {
-	background-image: url("../images/bg/bg_my.png);
+	background-image: url(./images/bg/bg_my.png);
 	background-size: 50px;
 	width: 50px;
 	height: 50px;
@@ -2317,10 +2329,11 @@ li.li_h2 {
 	width: 100%; 
 } 
 .bid_history_table thead,
-.bid_history_table tbody, { 
+.bid_history_table tbody { 
 	font-size: 13px;  
 }
 }
+
 @media all and (max-width:414px){
 .price_table { 
 	margin: 20px auto;
@@ -2379,6 +2392,7 @@ li.li_h2 {
 	top: 200px;
 }
 }
+
 @media all and (max-width:375px){ 
 .col7.bid_livebox {
 	text-align: left; 
@@ -2404,6 +2418,7 @@ li.li_h2 {
 	margin-right: 0; 
 } 
 }
+
 @media all and (max-width:374px) {
 .tab_box_right {
 	height: auto;
@@ -2435,27 +2450,29 @@ li.li_h2 {
 	padding-bottom: 10px; 
 }
 }
+
 @media all and (max-width: 352px){ 
 .artcon_tit_h2 h2 {
 	font-size: 18px;
 }
 .auction_list.bid > ul > li .auction_list_hidden_box .buy_list_bid_info span {
 	margin-right: 0;    
-}   
 }
 .tbl_style01 td span.number_bar01 {
 	display: none;
 } 
 }
-@media and all (max-width: 350px){
+
+@media all and (max-width: 350px){
 .m_main_banner .txt	{
 	padding:0px 15px;
 }
 }    
+
 @media all and (max-width: 346px){
 .tbl_style01 td input.phone_number{
 	width: 100%;
 	display: block;
 	clear:both
 } 
-
+}

@@ -189,8 +189,7 @@
 					</dl> 
 				</div>  
 	   			<!-- button -->
-	   			  <!-- //green orange yellow sky deepblue deeppink deepred  -->
-					 <a href="./bidLive_memberNew.html" target="_blank" class="btn_main_more green" ng-class="green">실시간응찰</a>
+				<a href="./bidLive_memberNew.html" target="_blank" class="btn_main_more green" ng-class="green">실시간응찰</a>
 	              <a href="javascript:void(0);" target="_blank" class="btn_main_more green" ng-class="green">작품보기</a>
 	              <a href="javascript:void(0);" target="_blank" class="btn_main_more yellow" ng-class="green">도록보기</a>
 	   		</div><!-- sec3_cont -->
@@ -204,33 +203,28 @@
 			<div class="m_ver_sliderwrap">         
 				<div class="bxslider">    
 					<div class="main_sd">     
-						  <div class="img">
+						<div class="img">
 							<img src="./images/img/main01.jpg" alt="AUCTION"  style="width:100%; height:auto;" /> 
 						 </div>    
-						 <div class="txt">     
+						 <div class="txt"> 
 							<div class="title txt_han">
-								<p ng-bind-html="slide.SLIDE_TITLE_JSON[locale] | unsafe" class="ng-binding"><span>2022</span><br>Busan Sale</p>    
+								<p ng-bind-html="slide.SLIDE_TITLE_JSON[locale] | unsafe" class="ng-binding"><span style="font-size:14px;">2019</span><br>제 101회 서울옥션 미술품경매</p>    
 							</div>
 							<!-- button -->
-							 <!-- ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null --><a ng-if="slide.BTN1_DISP_YN == 'Y' &amp;&amp; slide.BTN1_URL != null" href="https://www.seoulauction.com/currentAuction?sale_kind=offline_only" target="_self" class="btn_main_more green ng-binding ng-scope" ng-class="{'Y':'yellow', 'N':'green'}[slide.BTN1_COLOR_YN]">작품 보기</a><!-- end ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null -->
-							 <!-- ngIf: slide.BTN2_DISP_YN == 'Y' && slide.BTN2_URL != null --><a ng-if="slide.BTN2_DISP_YN == 'Y' &amp;&amp; slide.BTN2_URL != null" href="https://www.seoulauction.com/nas_img/front/homepage/e-book/169th/index.html" target="_blank" class="btn_main_more green ng-binding ng-scope yellow" ng-class="{'Y':'yellow', 'N':'green'}[slide.BTN2_COLOR_YN]">도록 보기</a><!-- end ngIf: slide.BTN2_DISP_YN == 'Y' && slide.BTN2_URL != null -->
-							 <!-- ngIf: slide.BTN3_DISP_YN == 'Y' && slide.BTN3_URL != null -->
-							 <!-- ngIf: slide.BTN4_DISP_YN == 'Y' && slide.BTN4_URL != null -->
-							 <!-- ngIf: slide.BTN5_DISP_YN == 'Y' && slide.BTN5_URL != null -->
-							 
-							<!-- 임시버튼 추가 1 (title == 오피스 슬라이드관리명으로 넣기)-->     
-							<!-- ngIf: isAndroid && slide.TITLE == 'ZEROBASE_The Painters' -->
-							
-							 <!-- contents -->
+							<!-- ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null --><a  href="./bidLive_memberNew.html" target="_self" class="btn_main_more yellow">실시간 응찰</a>
 							 <div class="info">
 								 <span>
 									<dl style="padding-bottom: 10px;"> 
 										 <dt><strong ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Auction]</strong></dt>
-										<dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 27 (화) 4PM<br>그랜드 조선 부산 5F 볼룸</dd>     
+										<dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe" class="ng-binding">2019. 12. 01 (화) 4PM<br>
+											서울옥션 강남센터 6F</dd>     
 									</dl>   
 									<dl>   
 										<dt><strong ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Preview]</strong></dt>
-										<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 14 (수) ~ 9. 18 (일)<br>강남센터 B4F, 6F 10:00 AM - 7:00 PM <br>2022. 9. 19 (월) ~ 9. 21 (화)<br>강남센터 5F, 6F 10:00 AM - 7:00 PM <br><br>2022. 9. 23 (금) ~ 9. 27 (화)<br>부산점 (그랜드조선 4F) 10:00 AM - 7:00 PM</dd>
+										<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 14 (수) ~ 9. 18 (일)<br>
+											강남센터 B4F, 6F 10:00 AM - 7:00 PM<br>
+											2022. 9. 19 (월) ~ 9. 21 (화)<br>
+											강남센터 5F, 6F 10:00 AM - 7:00 PM</dd>
 									</dl>  
 								</span>  
 							 </div>
@@ -241,32 +235,28 @@
 						  <img src="./images/img/main02.jpg" alt="AUCTION"  style="width:100%; height:auto;" /> 
 					   </div>    
 					   <div class="txt">     
-						  <div class="title txt_han">
-							  <p ng-bind-html="slide.SLIDE_TITLE_JSON[locale] | unsafe" class="ng-binding"><span>2022</span><br>Busan Sale</p>    
-						  </div>
-						  <!-- button -->
-						   <!-- ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null --><a ng-if="slide.BTN1_DISP_YN == 'Y' &amp;&amp; slide.BTN1_URL != null" href="https://www.seoulauction.com/currentAuction?sale_kind=offline_only" target="_self" class="btn_main_more green ng-binding ng-scope" ng-class="{'Y':'yellow', 'N':'green'}[slide.BTN1_COLOR_YN]">작품 보기</a><!-- end ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null -->
-						   <!-- ngIf: slide.BTN2_DISP_YN == 'Y' && slide.BTN2_URL != null --><a ng-if="slide.BTN2_DISP_YN == 'Y' &amp;&amp; slide.BTN2_URL != null" href="https://www.seoulauction.com/nas_img/front/homepage/e-book/169th/index.html" target="_blank" class="btn_main_more green ng-binding ng-scope yellow" ng-class="{'Y':'yellow', 'N':'green'}[slide.BTN2_COLOR_YN]">도록 보기</a><!-- end ngIf: slide.BTN2_DISP_YN == 'Y' && slide.BTN2_URL != null -->
-						   <!-- ngIf: slide.BTN3_DISP_YN == 'Y' && slide.BTN3_URL != null -->
-						   <!-- ngIf: slide.BTN4_DISP_YN == 'Y' && slide.BTN4_URL != null -->
-						   <!-- ngIf: slide.BTN5_DISP_YN == 'Y' && slide.BTN5_URL != null -->
-						   
-						  <!-- 임시버튼 추가 1 (title == 오피스 슬라이드관리명으로 넣기)-->     
-						  <!-- ngIf: isAndroid && slide.TITLE == 'ZEROBASE_The Painters' -->
-						  
-						   <!-- contents -->
-						   <div class="info">
-							   <span>
-								  <dl style="padding-bottom: 10px;"> 
-									   <dt><strong ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Auction]</strong></dt>
-									  <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 27 (화) 4PM<br>그랜드 조선 부산 5F 볼룸</dd>     
-								  </dl>   
-								  <dl>   
-									  <dt><strong ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Preview]</strong></dt>
-									  <dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 14 (수) ~ 9. 18 (일)<br>강남센터 B4F, 6F 10:00 AM - 7:00 PM <br>2022. 9. 19 (월) ~ 9. 21 (화)<br>강남센터 5F, 6F 10:00 AM - 7:00 PM <br><br>2022. 9. 23 (금) ~ 9. 27 (화)<br>부산점 (그랜드조선 4F) 10:00 AM - 7:00 PM</dd>
-								  </dl>  
-							  </span>  
-						   </div>
+						  <<div class="title txt_han">
+							<p ng-bind-html="slide.SLIDE_TITLE_JSON[locale] | unsafe" class="ng-binding"><span style="font-size:14px;">2019</span><br>제 101회 서울옥션 미술품경매</p>    
+						</div>
+						<!-- button -->
+						<a href="./bidLive_memberNew.html" target="_self" class="btn_main_more yellow">실시간 응찰</a>
+						<a href="javascript:void(0);" target="_self" class="btn_main_more green">작품 보기</a>
+						 <div class="info">
+							 <span>
+								<dl style="padding-bottom: 10px;"> 
+									 <dt><strong ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Auction]</strong></dt>
+									<dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe" class="ng-binding">2019. 12. 01 (화) 4PM<br>
+										서울옥션 강남센터 6F</dd>     
+								</dl>   
+								<dl>   
+									<dt><strong ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Preview]</strong></dt>
+									<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 14 (수) ~ 9. 18 (일)<br>
+										강남센터 B4F, 6F 10:00 AM - 7:00 PM<br>
+										2022. 9. 19 (월) ~ 9. 21 (화)<br>
+										강남센터 5F, 6F 10:00 AM - 7:00 PM</dd>
+								</dl>  
+							</span>  
+						 </div>
 					  </div>
 				  </div>
 				  <div class="main_sd">     
@@ -274,32 +264,28 @@
 					  <img src="./images/img/main03.jpg" alt="AUCTION"  style="width:100%; height:auto;" /> 
 				   </div>    
 				   <div class="txt">     
-					  <div class="title txt_han">
-						  <p ng-bind-html="slide.SLIDE_TITLE_JSON[locale] | unsafe" class="ng-binding"><span>2022</span><br>Busan Sale</p>    
-					  </div>
-					  <!-- button -->
-					   <!-- ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null --><a ng-if="slide.BTN1_DISP_YN == 'Y' &amp;&amp; slide.BTN1_URL != null" href="https://www.seoulauction.com/currentAuction?sale_kind=offline_only" target="_self" class="btn_main_more green ng-binding ng-scope" ng-class="{'Y':'yellow', 'N':'green'}[slide.BTN1_COLOR_YN]">작품 보기</a><!-- end ngIf: slide.BTN1_DISP_YN == 'Y' && slide.BTN1_URL != null -->
-					   <!-- ngIf: slide.BTN2_DISP_YN == 'Y' && slide.BTN2_URL != null --><a ng-if="slide.BTN2_DISP_YN == 'Y' &amp;&amp; slide.BTN2_URL != null" href="https://www.seoulauction.com/nas_img/front/homepage/e-book/169th/index.html" target="_blank" class="btn_main_more green ng-binding ng-scope yellow" ng-class="{'Y':'yellow', 'N':'green'}[slide.BTN2_COLOR_YN]">도록 보기</a><!-- end ngIf: slide.BTN2_DISP_YN == 'Y' && slide.BTN2_URL != null -->
-					   <!-- ngIf: slide.BTN3_DISP_YN == 'Y' && slide.BTN3_URL != null -->
-					   <!-- ngIf: slide.BTN4_DISP_YN == 'Y' && slide.BTN4_URL != null -->
-					   <!-- ngIf: slide.BTN5_DISP_YN == 'Y' && slide.BTN5_URL != null -->
-					   
-					  <!-- 임시버튼 추가 1 (title == 오피스 슬라이드관리명으로 넣기)-->     
-					  <!-- ngIf: isAndroid && slide.TITLE == 'ZEROBASE_The Painters' -->
-					  
-					   <!-- contents -->
-					   <div class="info">
-						   <span>
-							  <dl style="padding-bottom: 10px;"> 
-								   <dt><strong ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Auction]</strong></dt>
-								  <dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 27 (화) 4PM<br>그랜드 조선 부산 5F 볼룸</dd>     
-							  </dl>   
-							  <dl>   
-								  <dt><strong ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Preview]</strong></dt>
-								  <dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 14 (수) ~ 9. 18 (일)<br>강남센터 B4F, 6F 10:00 AM - 7:00 PM <br>2022. 9. 19 (월) ~ 9. 21 (화)<br>강남센터 5F, 6F 10:00 AM - 7:00 PM <br><br>2022. 9. 23 (금) ~ 9. 27 (화)<br>부산점 (그랜드조선 4F) 10:00 AM - 7:00 PM</dd>
-							  </dl>  
-						  </span>  
-					   </div>
+					<div class="title txt_han">
+						<p ng-bind-html="slide.SLIDE_TITLE_JSON[locale] | unsafe" class="ng-binding"><span style="font-size:14px;">2019</span><br>제 101회 서울옥션 미술품경매</p>    
+					</div>
+					<!-- button -->
+					<a  href="./bidLive_memberNew.html" target="_self" class="btn_main_more yellow">실시간 응찰</a>
+					<a href="javascript:void(0);" target="_self" class="btn_main_more green">작품 보기</a>
+					 <div class="info">
+						 <span>
+							<dl style="padding-bottom: 10px;"> 
+								 <dt><strong ng-bind-html="slide.TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Auction]</strong></dt>
+								<dd ng-bind-html="slide.TEXT_JSON[locale] | unsafe" class="ng-binding">2019. 12. 01 (화) 4PM<br>
+									서울옥션 강남센터 6F</dd>     
+							</dl>   
+							<dl>   
+								<dt><strong ng-bind-html="slide.SUB_TEXT_TITLE_JSON[locale] | unsafe" class="ng-binding">[Preview]</strong></dt>
+								<dd ng-bind-html="slide.SUB_TEXT_JSON[locale] | unsafe" class="ng-binding">2022. 9. 14 (수) ~ 9. 18 (일)<br>
+									강남센터 B4F, 6F 10:00 AM - 7:00 PM<br>
+									2022. 9. 19 (월) ~ 9. 21 (화)<br>
+									강남센터 5F, 6F 10:00 AM - 7:00 PM</dd>
+							</dl>  
+						</span>  
+					 </div>
 				  </div>
 			  </div>
 				</div><!-- //bxslider --> 
