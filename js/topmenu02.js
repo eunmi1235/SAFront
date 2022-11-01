@@ -20,8 +20,9 @@ function closeNav() {
   $("li.dropdown > a").addClass("closeItem");   
 }; 
 
+//모바일 메뉴 제이쿼리   
+(function ($) {
 
-$(document).ready(function(){ 
 	//마우스 호버시 메뉴 열림    
 	$(".gnb_menu > .fl_menu > li").mouseenter(function(){ 
 		$(".gnb_menu_layer").css({
@@ -46,8 +47,8 @@ $(document).ready(function(){
 		},500, function(){       
 			$(".bg_modal02").remove();   
 		});  
-	});    
-	
+	});     
+
 	//모바일 햄버거 메뉴
     $('#line-wrapper').click(function(){
 		/* 추가된 부분 */
@@ -56,36 +57,7 @@ $(document).ready(function(){
 		$('#line-top').toggleClass('line-top').toggleClass('top-reverse');
 		$('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse'); 
 		$('#line-bot').toggleClass('line-bot').toggleClass('bot-reverse');
-	  });
-});     
-
-$(document).ready(function(){
-	// top menu 전체 드롭다운 메뉴
-	$("nav > ul > li > a").mouseenter(function(){ 
-		$(".sub_back").stop().slideToggle("linear");   
-	}); 
-	$(".sub_back").mouseenter(function(){
-		$(".sub_back").stop().slideToggle("linear");        
-	}); 
-	
-	$("nav > ul > li > a").mouseleave(function(){
-		$(".sub_back").stop().slideToggle("fast");    
-	});  
-	$(".sub_back").mouseleave(function(){      
-		$(".sub_back").stop().slideToggle("fast");      
-	});
-	
-	// 로케이션 메뉴 클릭시
-	$(".location_submenu").click(function(){
-		$(this).children("ul").toggleClass("hide");
-		$(this).children("i").toggleClass("rotation_up"); 
-	});  
-});
-	
-
-
-//모바일 메뉴 제이쿼리   
-(function ($) {
+	  }); 
 
 	$.fn.mgaccordion = function (options) {
 
@@ -201,6 +173,34 @@ $(document).ready(function(){
     $(".submenu > li.dropdown > a").click(function(){  
     	$(this).css("color","fff");   
     }); 
-});  
- 
+}(jQuery));
+
+/*$(document).ready(function(){
+	// top menu 전체 드롭다운 메뉴
+	$("nav > ul > li > a").mouseenter(function(){ 
+		$(".sub_back").stop().slideToggle("linear");   
+	}); 
+	$(".sub_back").mouseenter(function(){
+		$(".sub_back").stop().slideToggle("linear");        
+	}); 
+	
+	$("nav > ul > li > a").mouseleave(function(){
+		$(".sub_back").stop().slideToggle("fast");    
+	});  
+	$(".sub_back").mouseleave(function(){      
+		$(".sub_back").stop().slideToggle("fast");      
+	});
+	
+	// 로케이션 메뉴 클릭시
+	$(".location_submenu").click(function(){
+		$(this).children("ul").toggleClass("hide");
+		$(this).children("i").toggleClass("rotation_up"); 
+	});  
+});*/    
+
+	
+
+
+
+
  
