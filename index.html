@@ -4,7 +4,7 @@
     <html lang="ko" ng-app="myApp">
     <head>
     <meta name="naver-site-verification" content="e43736eddfc3d46038024a9d2132da077391aadf"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"> 
     <meta charset="UTF-8">
     <title>서울옥션</title>
         <meta name="format-detection" content="telephone=no">
@@ -20,6 +20,7 @@
         <meta property="og:description" content="미술품 경매를 통해 많은 사람들과 일상 속 예술의 경험과 기쁨을 나누고자 합니다.">
         <meta property="og:image" content="https://www.seoulauction.com/nas_img/front/homepage/201508122329463497773394954126.jpg"/>        
         <meta property="al:web:url" content="https://www.seoulauction.com">
+        <meta name="application-name" content="SeoulAuction" />
     
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/icon/favic/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/icon/favic/apple-touch-icon-72x72.png" />
@@ -27,21 +28,20 @@
         <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/icon/favic/apple-touch-icon-120x120.png" />
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/icon/favic/apple-touch-icon-152x152.png" />
         <link rel="icon" type="image/png" href="./images/icon/favic/favicon-32x32.png" sizes="32x32"/>
-        <link rel="icon" type="image/png" href="./images/icon/favic/favicon-16x16.png" sizes="16x16"/> 
-        <meta name="application-name" content="SeoulAuction" />
-     
+        <link rel="icon" type="image/png" href="./images/icon/favic/favicon-16x16.png" sizes="16x16"/>   
+
         <link href="./css/old/common.css" rel="stylesheet" type="text/css"> 
         <link href="./css/sa.common.2.0.css" rel="stylesheet" type="text/css">    
         <link href="./css/sa.common.2.1.css" rel="stylesheet" type="text/css">
         <link type="text/css" href="./css/imgzoom/magnific-popup.css" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!-- 아트컨실팅 및 후원 기증 페이지 웹아이콘 -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css"><!-- 아트컨실팅 및 후원 기증 페이지 웹아이콘 -->
 
         <!-- 메인에만 -->
         <link href="./css/old/onepcssgrid_new.css" rel="stylesheet" type="text/css"/>
 
         <!-- 아이패드 버전 슬라이드 플러그인 -->
-        <link href="./css/jquery.bxslider.min.css" rel="stylesheet">
-        <link href="./css/main_bxslider.css" rel="stylesheet">
+        <link href="./css/jquery.bxslider.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/main_bxslider.css" rel="stylesheet" type="text/css"> 
         <!-- 모바일메뉴 --> 
         <link rel="stylesheet" href="./css/topmenu02.css" type="text/css">          
         
@@ -75,13 +75,15 @@
         <script type="text/javascript" src="./js/old/frontCommon.js"></script>
         <script type="text/javascript" src="./js/rightClick.js"></script> 
         <script type="text/javascript" src="./js/imgzoom/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="./js/topmenu02.js"></script>  
+        <script type="text/javascript" src="./js/old/ui.js"></script>   
 
         <!-- header, footer -->
         <script type="text/javascript">
             $(function(){
-                $(".header_wrap").load('./header.html');
-                $(".footer_wrap").load('./footer.html');
-                $(".main_slide").load('./inc_home_slide.html'); 
+                $(".header_wrap").load('/header.html');
+                $(".footer_wrap").load('/footer.html');
+                $(".main_slide").load('/inc_home_slide.html');  
             });
         </script>
     <script>
