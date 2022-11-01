@@ -20,45 +20,7 @@ function closeNav() {
   $("li.dropdown > a").addClass("closeItem");   
 }; 
 
-//모바일 메뉴 제이쿼리   
-(function ($) {
-
-	//마우스 호버시 메뉴 열림    
-	$(".gnb_menu > .fl_menu > li").mouseenter(function(){ 
-		$(".gnb_menu_layer").css({
-			overflow: "visible",  
-			display: "block" 
-		});
-		$(".gnb_menu_layer").stop().animate({  
-			left: "0",
-		},500, function(){
-			$(".container_wrap").append('<div class="bg_modal02">'+'</div>');     
-		});     
-	}); 
-	  
-	//마우스 호버시 메뉴 닫힘  
-	$(".gnb_menu_layer").stop().mouseleave(function(){   
-		$(this).css({   
-			overflow: "hidden"  
-		}); 
-		$(this).animate({       
-			left: "-1902px", 
-			display: "none"  
-		},500, function(){       
-			$(".bg_modal02").remove();   
-		});  
-	});     
-
-	//모바일 햄버거 메뉴
-    $('#line-wrapper').click(function(){
-		/* 추가된 부분 */
-		$('.line').removeClass('init');
-		$('.line').addClass('menu_close');  
-		$('#line-top').toggleClass('line-top').toggleClass('top-reverse');
-		$('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse'); 
-		$('#line-bot').toggleClass('line-bot').toggleClass('bot-reverse');
-	  }); 
-
+( function($) {
 	$.fn.mgaccordion = function (options) {
 
 		var defaults = {
@@ -168,12 +130,50 @@ function closeNav() {
 
 		return this.initialize();
 
-	}; 
+	};  
 
-    $(".submenu > li.dropdown > a").click(function(){  
-    	$(this).css("color","fff");   
-    }); 
-}(jQuery));
+	$(function() {
+		//마우스 호버시 메뉴 열림    
+		$(".gnb_menu > .fl_menu > li").mouseenter(function(){  
+			$(".gnb_menu_layer").css({
+				overflow: "visible",  
+				display: "block" 
+			});
+			$(".gnb_menu_layer").stop().animate({  
+				left: "0",
+			},500, function(){
+				$(".container_wrap").append('<div class="bg_modal02">'+'</div>');     
+			});     
+		}); 
+		
+		//마우스 호버시 메뉴 닫힘  
+		$(".gnb_menu_layer").stop().mouseleave(function(){   
+			$(this).css({   
+				overflow: "hidden"  
+			}); 
+			$(this).animate({       
+				left: "-1902px", 
+				display: "none"  
+			},500, function(){       
+				$(".bg_modal02").remove();   
+			});  
+		});     
+
+		//모바일 햄버거 메뉴
+		$('#line-wrapper').click(function(){
+			/* 추가된 부분 */
+			$('.line').removeClass('init');
+			$('.line').addClass('menu_close');  
+			$('#line-top').toggleClass('line-top').toggleClass('top-reverse');
+			$('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse'); 
+			$('#line-bot').toggleClass('line-bot').toggleClass('bot-reverse');
+		}); 
+
+		$(".submenu > li.dropdown > a").click(function(){  
+			$(this).css("color","fff");   
+		});   	
+	});
+})(jquery);      
 
 /*$(document).ready(function(){
 	// top menu 전체 드롭다운 메뉴
