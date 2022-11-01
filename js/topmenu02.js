@@ -1,4 +1,27 @@
-$(document).ready(function(){
+//모바일 아코디언 left 메뉴  
+function openNav() {  
+	/* 메뉴 리사이즈 조절 */  
+	if (matchMedia("screen and (max-width: 374px)").matches) {     
+		$("#mySidenav").css("width","250px");    
+	}else{
+		$("#mySidenav").css("width","300px");  
+	}; 
+	  /*document.getElementById("mySidenav").style.width = "280px"*/       
+	  $(".overlay_back").css("left","0");  
+	  $(".my-menu, .mo_util a").stop().show();                         
+	};  
+	    
+function closeNav() {   
+  document.getElementById("mySidenav").style.width = "0"; 
+  $(".overlay_back").css("left","-3000px");  
+  $(".my-menu, .mo_util a").stop().hide(); 
+  $("ul.submenu").css("display","none");   
+  $("li.dropdown > a").removeClass("openItem");  
+  $("li.dropdown > a").addClass("closeItem");   
+}; 
+
+
+$(document).ready(function(){ 
 	//마우스 호버시 메뉴 열림    
 	$(".gnb_menu > .fl_menu > li").mouseenter(function(){ 
 		$(".gnb_menu_layer").css({
@@ -23,22 +46,20 @@ $(document).ready(function(){
 		},500, function(){       
 			$(".bg_modal02").remove();   
 		});  
-	});     
-});   
-
-$(document).ready(function(){
+	});    
+	
 	//모바일 햄버거 메뉴
     $('#line-wrapper').click(function(){
-	  /* 추가된 부분 */
-	  $('.line').removeClass('init');
-	  $('.line').addClass('menu_close');  
-	  $('#line-top').toggleClass('line-top').toggleClass('top-reverse');
-	  $('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse'); 
-	  $('#line-bot').toggleClass('line-bot').toggleClass('bot-reverse');
-	});
-}); 
+		/* 추가된 부분 */
+		$('.line').removeClass('init');
+		$('.line').addClass('menu_close');  
+		$('#line-top').toggleClass('line-top').toggleClass('top-reverse');
+		$('#line-mid').toggleClass('line-mid').toggleClass('mid-reverse'); 
+		$('#line-bot').toggleClass('line-bot').toggleClass('bot-reverse');
+	  });
+});     
 
-/*$(document).ready(function(){
+$(document).ready(function(){
 	// top menu 전체 드롭다운 메뉴
 	$("nav > ul > li > a").mouseenter(function(){ 
 		$(".sub_back").stop().slideToggle("linear");   
@@ -59,7 +80,8 @@ $(document).ready(function(){
 		$(this).children("ul").toggleClass("hide");
 		$(this).children("i").toggleClass("rotation_up"); 
 	});  
-});*/    
+});
+	
 
 
 //모바일 메뉴 제이쿼리   
@@ -179,34 +201,6 @@ $(document).ready(function(){
     $(".submenu > li.dropdown > a").click(function(){  
     	$(this).css("color","fff");   
     }); 
-}(jQuery));
-
-
-//모바일 아코디언 left 메뉴  
-function openNav() {  
-	/* 메뉴 리사이즈 조절 */  
-	if (matchMedia("screen and (max-width: 374px)").matches) {     
-		$("#mySidenav").css("width","250px");    
-	}else{
-		$("#mySidenav").css("width","300px");  
-	}; 
-	  /*document.getElementById("mySidenav").style.width = "280px"*/       
-	  $(".overlay_back").css("left","0");  
-	  $(".my-menu, .mo_util a").stop().show();                         
-	};  
-	    
-function closeNav() {   
-  document.getElementById("mySidenav").style.width = "0"; 
-  $(".overlay_back").css("left","-3000px");  
-  $(".my-menu, .mo_util a").stop().hide(); 
-  $("ul.submenu").css("display","none");   
-  $("li.dropdown > a").removeClass("openItem");  
-  $("li.dropdown > a").addClass("closeItem");   
-}; 
-
-	
-
-
-
-
+});  
+ 
  
